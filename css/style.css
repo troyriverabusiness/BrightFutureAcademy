@@ -1,25 +1,105 @@
 
+/*    LANDING PAGE tags/classes   */
+.page-header {}
+.offer-header {}
+.subjects-preview {}
+#image-features {}
+.interlude-header {}
+.meet-our-team {}
+.pricing {}
+.testimonials-grid {}
+.FAQs {}
 
 
-/* COLORS
-   #--text: #041910; #444444
-   #--background: #f2f2f2; #fafffe
-   #--primary: #d8d9da;
-   #--secondary: #296280;
-   #--accent: #444444;
- */
+/*    CONTACT PAGE tags/classes   */
+.contact-form {}
+.contact-map {}
+.page-header {}
+.mid-header {}
+
+
+/*    ABOUT US PAGE tags/classes   */
+.page-header {}
+.image-header {}
+.image-section {}
+.image-section2 {}
+.meet-our-team {}
+.image-and-list {}
+.testimonials {}
+
+
+/*    SUBJECT PAGE tags/classes   */
+.page-header {}
+.features {}
+.image-section {}
+.image-and-list {}
+.features {}         /*  AGAIN BUT DIFFERENT CONTENT  */
+.subjects-grid {}
+.testimonials {}
+
+
+/*    SPECIFIC SUBJECT PAGE tags/classes   */
+.page-header {}
+.e-commerce {}
+.image-section {}
+.interlude-header {}
+.image-and-list {}
+.calendar-display {}
+.testimonials {}
+
+
+/*    Common Classes    */
+.page-header {}
+.interlude-header {}
+
+
+/*     GLOBAL CLASSES THROUGHOUT PROJECT    */
+
+
+.meet-our-team {}
+.FAQs {
+   text-align: center;
+}
+
+
+
+.pricing {}
+
+.mid-header {}
+.interlude-header {}
+.offer-header {}
+
+.image-and-list {}
+.image-header {}
+
+.image-section2 {}
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: white;
+   font-family: Monospaced, sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   color: #444444;
+   text-decoration: none;
 }
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 22px 5%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
 
 ul {
    list-style: none;
 }
-
 ul li {
    display: inline-block;
    position: relative;
@@ -29,7 +109,7 @@ ul li {
    border: 1px solid #4d4d4d;
    width: max-content;
    margin-top: 15px;
-   background: #fafffe;
+   background: white;
    position: absolute;
    display: none;
    z-index: 999;     /* most infront in the screen */
@@ -90,22 +170,7 @@ ul li {
    margin-right: 5px;
 }
 
-li, a, button {
-  font-family: Monospaced, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #444444;
-  text-decoration: none;
-}
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 22px 5%;
-  background-color: white;
-  border-bottom: 1px solid gray;
-}
 
 p {  /* dummy element - can be removed */
    margin-bottom: 50px;
