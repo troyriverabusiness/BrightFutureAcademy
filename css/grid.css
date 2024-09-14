@@ -15,6 +15,11 @@ h3 {
 }
 
 
+#list_icon {
+   width: 18px;
+   height: 18px;
+}
+
 .header {
    margin: 50px 0 50px 150px;
 
@@ -213,7 +218,7 @@ button:hover {
 
 .footer {
    border-top: 1px solid gray;
-   margin-top: auto;
+   margin-top: 100px;
    padding: 80px 15%;
    background: #fdfaf6;
    display: flex;
