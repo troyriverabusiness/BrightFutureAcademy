@@ -3,12 +3,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Contact Us | Bright Future Academy</title>
+   <link rel="shortcut icon" type="x-icon" href="../icons/logo_small.png">
    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header>
-   <img class="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+   <a id="logo-link" href="LandingPage.html">
+      <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+   </a>
    <nav>
       <ul id="pageLinks">
          <li><a href="AboutUsPage.html">About Us</a></li>
@@ -24,11 +27,17 @@
          <li><a href="ContactPage.html">Contact</a></li>
       </ul>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html"><button><img src="list_icon.svg" alt="icon">All Subjects</button></a>
+   <a class="CTA" href="GridViewSubjects.html"><button><img src="../icons/list_icon.svg" alt="icon">All Subjects</button></a>
 </header>
 
 <main>
-   <section class="page-header"></section>
+   <section class="page-header">
+      <div class="page-header-text">
+         <h2>Specific Subject Section</h2>
+         <br>
+         <p>Description for this specific subject whatever</p>
+      </div>
+   </section>
 
    <section class="mid-header"></section>
 
@@ -87,8 +96,6 @@
       </div>
    </section>
 
-
-
    <section class="contact-map">
       <div class="contact-map-header">
          <div class="contact-map-header-left">
@@ -99,7 +106,7 @@
          <div class="contact-map-header-right">
             <table>
                <tr>
-                  <td><img src="#" alt="icon"></td>
+                  <td><img class="icon" src="../icons/" alt=""></td>
                   <td><div class="bold">Email</div></td>
                </tr>
                <tr>
@@ -107,14 +114,14 @@
                   <td>jdguantarosda@iclo.org</td>
                </tr>
                <tr>
-                  <td><img src="#" alt="icon"></td>
+                  <td><img class="icon" src="../icons/" alt=""></td>
                   <td><div class="bold">Phone</div></td>
                </tr>
                <tr>
                   <td></td>
                   <td>+34 1236943278</td>
                </tr><tr>
-               <td><img src="#" alt="icon"></td>
+               <td><img class="icon" src="../icons/" alt=""></td>
                <td><div class="bold">Address</div></td>
             </tr>
                <tr>
@@ -145,18 +152,22 @@
       <div class="footer-right">
          <div class="footer-content">
             <h4>Popular Links</h4>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">FAQs</a></li>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">FAQs</a></li>
+            </ul>
          </div>
 
          <div class="footer-content">
             <h4>Subjects</h4>
-            <li><a href="#">Math HL</a></li>
-            <li><a href="#">Physics SL</a></li>
-            <li><a href="#">Math SL</a></li>
-            <li><a href="#">Economics SL</a></li>
+            <ul>
+               <li><a href="#">Math HL</a></li>
+               <li><a href="#">Physics SL</a></li>
+               <li><a href="#">Math SL</a></li>
+               <li><a href="#">Economics SL</a></li>
+            </ul>
          </div>
       </div>
    </section>

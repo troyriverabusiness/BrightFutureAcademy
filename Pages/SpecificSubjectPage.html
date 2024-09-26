@@ -3,12 +3,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>e.g. Math AI | Bright Future Academy</title>
+   <link rel="shortcut icon" type="x-icon" href="../icons/logo_small.png">
    <link rel="stylesheet" href="../css/basics.css">
 </head>
 <body>
 
 <header>
-   <img class="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+   <a id="logo-link" href="LandingPage.html">
+      <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+   </a>
    <nav>
       <ul id="pageLinks">
          <li><a href="AboutUsPage.html">About Us</a></li>
@@ -24,7 +27,7 @@
          <li><a href="ContactPage.html">Contact</a></li>
       </ul>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html"><button><img src="list_icon.svg" alt="icon">All Subjects</button></a>
+   <a class="CTA" href="GridViewSubjects.html"><button><img src="../icons/list_icon.svg" alt="icon">All Subjects</button></a>
 </header>
 
 <main>
@@ -36,7 +39,35 @@
       </div>
    </section>
 
-   <section class="e-commerce"></section>
+   <section class="e-commerce">
+      <div class="e-commerce-container">
+         <div class="top-container">
+            <img id="class-image" src="../images/placeholder.webp" alt="image of class">
+            <div class="class-details">
+               <div class="page-links">
+                  <ul>
+                     <li><a href="GridViewSubjects.html">Classes</a></li>
+                     <li><a href="GridViewSubjects.html">Mathematics</a></li>
+                     <li><a href="#">Mathematics AI HL Grade 11</a></li>
+                  </ul>
+               </div>
+               <h3>Mathematics AI HL Grade 11</h3>
+               <h4>280€/mo</h4>
+               <div class="body-text">
+                  <p>BLALNLACLBALBALCBA</p>
+               </div>
+
+               <div class="actions">
+                  <button>Add to cart</button>
+                  <button>Buy now</button>
+               </div>
+            </div>
+         </div>
+         <div class="bottom-container">
+            <p>Baka text</p>
+         </div>
+      </div>
+   </section>
 
    <section class="image-section">
       <div class="image-section-container">
@@ -53,13 +84,13 @@
             </div>
          </div>
       </div>
-      <img class="placeholder" src="../placeholder.webp" alt="image">
+      <img class="placeholder" src="../images/placeholder.webp" alt="image">
    </section>
 
    <section class="interlude-header">
       <div class="interlude-container">
-         <h3>Free Introductory Session</h3>
-         <p>Description of introductory session</p>
+         <h3 id="interlude-container-left">Free Introductory Session</h3>
+         <p id="interlude-container-right">Description of introductory session</p>
       </div>
    </section>
 
@@ -82,7 +113,7 @@
             </tr>
          </table>
       </div>
-      <img src="../placeholder.webp" alt="big image">
+      <img src="../images/placeholder.webp" alt="big image">
    </section>
 
    <section class="calendar-display">
@@ -90,44 +121,48 @@
          <h3>When?</h3>
          <p>When are the classes for this specific subject etc</p>
       </div>
-      <img src="../placeholder.webp" alt="calendars for class">
+      <img src="../images/placeholder.webp" alt="calendars for class">
    </section>
 
    <section class="testimonials"></section>
-</main>
 
-
-<footer class="footer">
-   <div class="footer-left">
-      <div class="footer-content">
-         <img src="logo.png" alt="logo">
-         <p>Bright Future Academy Footer. More information</p>
-         <div class="icons">
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
+   <section class="footer">
+      <div class="footer-left">
+         <div class="footer-content">
+            <img src="logo.png" alt="logo">
+            <p>Bright Future Academy Footer. More information</p>
+            <div class="icons">
+               <a href="#"><i></i></a>
+               <a href="#"><i></i></a>
+               <a href="#"><i></i></a>
+            </div>
          </div>
       </div>
-   </div>
 
-   <div class="footer-right">
-      <div class="footer-content">
-         <h4>Popular Links</h4>
-         <li><a href="#">Home</a></li>
-         <li><a href="#">Contact</a></li>
-         <li><a href="#">About Us</a></li>
-         <li><a href="#">FAQs</a></li>
-      </div>
+      <div class="footer-right">
+         <div class="footer-content">
+            <h4>Popular Links</h4>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">FAQs</a></li>
+            </ul>
+         </div>
 
-      <div class="footer-content">
-         <h4>Subjects</h4>
-         <li><a href="#">Math HL</a></li>
-         <li><a href="#">Physics SL</a></li>
-         <li><a href="#">Math SL</a></li>
-         <li><a href="#">Economics SL</a></li>
+         <div class="footer-content">
+            <h4>Subjects</h4>
+            <ul>
+               <li><a href="#">Math HL</a></li>
+               <li><a href="#">Physics SL</a></li>
+               <li><a href="#">Math SL</a></li>
+               <li><a href="#">Economics SL</a></li>
+            </ul>
+         </div>
       </div>
-   </div>
-</footer>
+   </section>
+</main>
+
 
 </body>
 </html>

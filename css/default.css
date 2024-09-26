@@ -1,0 +1,133 @@
+
+/* PREDEFINED VALUES FOR PROJECT */
+:root {
+   --color-primary: #007bff;
+   --color-secondary: #007bff;
+
+
+   --font-title: 1rem;
+}
+
+
+
+* {
+   box-sizing: border-box;
+   background-color: white;
+
+   font-family: Monospaced, sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   color: #444444;
+   text-decoration: none;
+
+   padding: 0;
+   margin: 0;
+}
+
+
+/* GLOBAL TAGS */
+ul {
+   list-style: none;
+}
+ul li {
+   display: inline-block;
+   position: relative;
+}
+
+
+
+/*    NAVIGATION STYLING   */
+header {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 22px 5%;
+   background-color: white;
+   border-bottom: 1px solid gray;
+}
+
+.dropdown {
+   border: 1px solid #4d4d4d;
+   width: max-content;
+   margin-top: 15px;
+   background: white;
+   position: absolute;
+   display: none;    /* hidden until hovered above */
+   z-index: 999;     /* most in-front in the screen */
+}
+
+#pageLinks {
+   display: flex;
+   width: auto;
+   margin-right: 50px;
+}
+#pageLinks li {
+   display: inline-block;
+   padding: 8px;
+   background-color: white;
+   margin: 5px;
+}
+
+/* THE ACTUAL LINKS PEOPLE PRESS */
+#pageLinks li a {
+   transition: all 0.3s ease;
+   padding: 15px;
+}
+#pageLinks li a:hover {
+   color: black;
+   transition: all 0.3s ease;
+}
+
+#pageLinks li:hover .dropdown { /* Displays the dropdown menu upon hovering */
+   display: block;
+}
+
+#pageLinks .dropdown li { /* NOT VISIBLE */
+   display: block;
+   flex-direction: column;
+   width: auto;
+   align-items: center;
+   margin: 12px;
+   padding: 0px;
+}
+/* Pressable links within dropdown menu */
+#pageLinks .dropdown li a { /* VISIBLE */
+   display: block;
+   padding: 10px;
+   font-size: 14px;
+   text-align: center;
+   transition: all 0.3s ease;
+}
+#pageLinks .dropdown li a:hover {
+   color: black;
+   transform: translateY(-1px) translateX(2px);
+}
+
+
+
+.CTA img {
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+
+#logo {
+   cursor: pointer;
+   width: 240px;
+   height: 40px;
+}
+
+/* BUTTON TO VIEW ALL CLASSES */
+button {
+   padding: 12px 25px;
+   background-color: white;
+   border: 1px solid gray;
+   cursor: pointer;
+}
+button:hover {
+   border-color: black;
+}
+
+
+
+
