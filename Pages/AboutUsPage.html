@@ -4,6 +4,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Bright Future Academy</title>
    <link rel="shortcut icon" type="x-icon" href="../icons/logo_small.png">
+   <link rel="stylesheet" href="../css/global.css">
    <link rel="stylesheet" href="../css/aboutus.css">
 </head>
 <body>
@@ -27,7 +28,12 @@
          <li><a href="ContactPage.html">Contact</a></li>
       </ul>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html"><button><img src="../icons/list_icon.svg" alt="icon">All Subjects</button></a>
+   <a class="CTA" href="GridViewSubjects.html">
+      <button id="CTA-button">
+         <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+         All Subjects
+      </button>
+   </a>
 </header>
 
 <main>
@@ -68,57 +74,37 @@
    </section>
 
    <section class="meet-our-team">
-      <div class="header-text">
-         <h3>Meet our Team</h3>
-         <br>
-         <p>Bla bla bla blabeuabla blabuab lbaue</p>
+      <div class="header-text-button-container">
+         <div class="left-header">
+            <h3>Meet our Team</h3>
+            <p>Get to know the people working on improving your child's success</p>
+         </div>
+         <a href="AboutUsPage.html"><button>About Us</button></a>
       </div>
-      <div class="team-container">
-         <div class="team-member">
-            <img class="profile-pic" src="../images/placeholder.webp" alt="profile pic">
+      <ul class="team-container">
+         <li><div class="team-member">
+            <img class="profile-pic" src="../images/ceo.jpeg" alt="">
             <div class="name">
                <p class="student-name">Rawad Sabra</p>
-               <p>CEO and Math/Physics Tutor</p>
+               <p><i>CEO and Math/Physics Tutor</i></p>
             </div>
             <br>
-            <p class="desc">Description of bossman rawad</p>
+            <p class="desc">Experienced private tutor & Aerospace Engineer.</p>
             <br>
-            <a href="#"><img src="#" alt="linkedin icon"></a>
-         </div>
-         <div class="team-member">
-            <img class="profile-pic" src="../images/placeholder.webp" alt="profile pic">
+            <a href="#"><img src="../icons/linkedin.png" height="14px" width="14px" alt=""></a>
+         </div></li>
+         <li><div class="team-member">
+            <img class="profile-pic" src="../images/troyprofile.jpeg" alt="">
             <div class="name">
-               <p class="student-name">Rawad Sabra</p>
-               <p>CEO and Math/Physics Tutor</p>
+               <p class="student-name">Troy Rivera</p>
+               <p><i>Head of IT</i></p>
             </div>
             <br>
-            <p class="desc">Description of bossman rawad</p>
+            <p class="desc">Computer scientist in charge of IT at Bright Future Academy</p>
             <br>
-            <a href="#"><img src="#" alt="linkedin icon"></a>
-         </div>
-         <div class="team-member">
-            <img class="profile-pic" src="../images/placeholder.webp" alt="profile pic">
-            <div class="name">
-               <p class="student-name">Rawad Sabra</p>
-               <p>CEO and Math/Physics Tutor</p>
-            </div>
-            <br>
-            <p class="desc">Description of bossman rawad</p>
-            <br>
-            <a href="#"><img src="#" alt="linkedin icon"></a>
-         </div>
-         <div class="team-member">
-            <img class="profile-pic" src="../images/placeholder.webp" alt="profile pic">
-            <div class="name">
-               <p class="student-name">Rawad Sabra</p>
-               <p>CEO and Math/Physics Tutor</p>
-            </div>
-            <br>
-            <p class="desc">Description of bossman rawad</p>
-            <br>
-            <a href="#"><img src="#" alt="linkedin icon"></a>
-         </div>
-      </div>
+            <a href="#"><img src="../icons/linkedin.png" height="14px" width="14px" alt=""></a>
+         </div></li>
+      </ul>
       <div class="hiring">
          <div class="header-text-button">
             <h4>Interested in becoming part of the team?</h4>
@@ -171,37 +157,44 @@
    </section>
 
    <section class="footer">
-      <div class="footer-left">
-         <div class="footer-content">
-            <img src="logo.png" alt="logo">
-            <p>Bright Future Academy Footer. More information</p>
-            <div class="icons">
-               <a href="#"><i></i></a>
-               <a href="#"><i></i></a>
-               <a href="#"><i></i></a>
+      <div class="top-footer">
+         <div class="footer-left">
+            <div class="footer-content">
+               <img id="footer-logo" src="../icons/logo.png" alt="">
+               <p>Bright Future Academy Footer. More information</p>
+               <div class="icons-container">
+                  <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
+                  <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
+                  <a href="mailto:#"><img class="footer-icon" src="../icons/mail_icon.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer-right">
+            <div class="footer-content">
+               <h4>Popular Links</h4>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">FAQs</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-content">
+               <h4>Subjects</h4>
+               <ul>
+                  <li><a href="#">Math HL</a></li>
+                  <li><a href="#">Physics SL</a></li>
+                  <li><a href="#">Math SL</a></li>
+                  <li><a href="#">Economics SL</a></li>
+               </ul>
             </div>
          </div>
       </div>
-
-      <div class="footer-right">
-         <div class="footer-content">
-            <h4>Popular Links</h4>
-            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Contact</a></li>
-               <li><a href="#">About Us</a></li>
-               <li><a href="#">FAQs</a></li>
-            </ul>
-         </div>
-
-         <div class="footer-content">
-            <h4>Subjects</h4>
-            <ul>
-               <li><a href="#">Math HL</a></li>
-               <li><a href="#">Physics SL</a></li>
-               <li><a href="#">Math SL</a></li>
-               <li><a href="#">Economics SL</a></li>
-            </ul>
+      <div class="bottom-footer">
+         <div class="footer-misc">
+            <p>© Bright Future Academy 2024</p>
          </div>
       </div>
    </section>

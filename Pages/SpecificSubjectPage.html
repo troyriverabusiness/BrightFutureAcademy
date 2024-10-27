@@ -4,7 +4,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>e.g. Math AI | Bright Future Academy</title>
    <link rel="shortcut icon" type="x-icon" href="../icons/logo_small.png">
-   <link rel="stylesheet" href="../css/basics.css">
+   <link rel="stylesheet" href="../css/global.css">
+   <link rel="stylesheet" href="../css/class.css">
 </head>
 <body>
 
@@ -27,137 +28,191 @@
          <li><a href="ContactPage.html">Contact</a></li>
       </ul>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html"><button><img src="../icons/list_icon.svg" alt="icon">All Subjects</button></a>
+   <a class="CTA" href="GridViewSubjects.html">
+      <button id="CTA-button">
+         <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+         All Subjects
+      </button>
+   </a>
 </header>
 
 <main>
    <section class="page-header">
       <div class="page-header-text">
          <h2>Specific Subject Section</h2>
-         <br>
          <p>Description for this specific subject whatever</p>
       </div>
    </section>
 
    <section class="e-commerce">
-      <div class="e-commerce-container">
-         <div class="top-container">
-            <img id="class-image" src="../images/placeholder.webp" alt="image of class">
-            <div class="class-details">
-               <div class="page-links">
-                  <ul>
-                     <li><a href="GridViewSubjects.html">Classes</a></li>
-                     <li><a href="GridViewSubjects.html">Mathematics</a></li>
-                     <li><a href="#">Mathematics AI HL Grade 11</a></li>
-                  </ul>
-               </div>
-               <h3>Mathematics AI HL Grade 11</h3>
-               <h4>280€/mo</h4>
-               <div class="body-text">
-                  <p>BLALNLACLBALBALCBA</p>
+      <div class="class-container">
+         <div class="links">
+            <a href="GridViewSubjects.html">Subjects</a>
+            <img class="arrow" src="../icons/right_arrow.svg" alt="">
+            <a href="GridViewSubjects.html#maths">Maths</a>
+            <img class="arrow" src="../icons/right_arrow.svg" alt="">
+            <b id="current-page">Maths Application and Interpretation HL</b>
+         </div>
+
+         <div class="main">
+            <div class="info">
+               <h3>Math Application and Interpretation HL</h3>
+               <p>Here is where a brief overview of the class is going to be etc</p>
+
+               <p>Shorter one liners</p>
+               <p>Short other line </p>
+               <p>finally another line</p>
+
+               <div class="details-box">
+                  <div class="quick-links">
+                     <a class="quicklink" id="first" href="#details">Details</a>
+                     <a class="quicklink" href="#curriculum">Curriculum</a>
+                     <a class="quicklink" href="#date">Date</a>
+                  </div>
+
+                  <p>text </p>
                </div>
 
-               <div class="actions">
-                  <button>Add to cart</button>
-                  <button>Buy now</button>
+            </div>
+
+            <div class="checkout">
+               <span id="price">280€<span>/mo</span></span>
+
+               <div class="badges">
+                  <p class="badge">Grade 11</p>
+                  <p class="badge">In-person</p>
                </div>
+               <form action="">
+                  <div class="form">
+                     <p>Check Availability</p>
+                     <label>
+                        <input type="text" placeholder="Name*">
+                     </label>
+                     <label>
+                        <input type="text" placeholder="Email*">
+                     </label>
+                     <label>
+                        <input type="text" placeholder="Phone">
+                     </label>
+                     <p style="font-size: 14px;">* = required</p>
+                  </div>
+                  <button class="submit" type="submit">Submit</button>
+               </form>
             </div>
          </div>
-         <div class="bottom-container">
-            <p>Baka text</p>
-         </div>
       </div>
+
+
    </section>
 
-   <section class="image-section">
-      <div class="image-section-container">
-         <h3>Heading</h3>
-         <p>body text or description</p>
+   <section id="details">
+      <div class="details-container">
+         <h3>How is the class structured</h3>
+         <p>Learn how the class is optimized for the most efficient learning outcome and student ability.</p>
          <div class="number-container">
             <div class="statistic">
-               <h4>50%</h4>
+               <h4>50% Theory explanation</h4>
                <p>of our students are sigmas</p>
             </div>
             <div class="statistic">
-               <h4>30%</h4>
+               <h4>50% Exercise practice</h4>
                <p>of our students are alpha</p>
             </div>
          </div>
       </div>
-      <img class="placeholder" src="../images/placeholder.webp" alt="image">
+      <img id="class-photo" src="../images/placeholder.webp" alt="image">
    </section>
 
    <section class="interlude-header">
       <div class="interlude-container">
          <h3 id="interlude-container-left">Free Introductory Session</h3>
-         <p id="interlude-container-right">Description of introductory session</p>
+         <p id="interlude-container-right">Looking for a flexible and convenient class schedule? At Bright Future Academy, we offer a variety of classes on different days and times to accommodate our students' busy schedules. Whether you're looking for after-school classes or weekend sessions, we have options for you. Join us and unlock your full potential today!</p>
       </div>
    </section>
 
-   <section class="image-and-list">
-      <div class="header-text">  <!-- this class is used elsewhere, for now only placeholder -->
-         <h3>Header</h3>
-         <p>descriptive text</p>
+   <section id="curriculum">
+      <div class="learning-objectives">
+         <h3>Learning Objectives</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
          <table>
             <tr>
-               <td><img src="#" alt="icon"></td>
-               <td>Feature text</td>
+               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td>Understand mathematical language</td>
             </tr>
             <tr>
-               <td><img src="#" alt="icon"></td>
-               <td>Feature text</td>
+               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td>Be able to identify similar problems</td>
             </tr>
             <tr>
-               <td><img src="#" alt="icon"></td>
-               <td>Feature text</td>
+               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td>Solve complex questions by roadmapping a solution</td>
+            </tr>
+            <tr>
+               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td>Understand and perform mathematical proofs</td>
             </tr>
          </table>
       </div>
-      <img src="../images/placeholder.webp" alt="big image">
+      <div class="curriculum">
+         <h4>Topics covered</h4>
+         <ul id="topics-list">   <!-- Change so that the topics stack vertically -->
+            <li>Proofs</li>
+            <li>Proofs</li>
+            <li>Proofs</li>
+            <li>Proofs</li>
+         </ul>
+      </div>
    </section>
 
-   <section class="calendar-display">
+   <section id="date">
       <div class="header-text">
-         <h3>When?</h3>
-         <p>When are the classes for this specific subject etc</p>
+         <h3>Date and Time</h3>
+         <p>The classes for Math Application and Interpretation HL, for Grade 11, will be held in-person at the academy, every <span>Tuesday 7:15pm to 9:15pm</span>.</p>
       </div>
-      <img src="../images/placeholder.webp" alt="calendars for class">
+      <img id="calendar" src="../images/placeholder.webp" alt="calendars">
    </section>
 
    <section class="testimonials"></section>
 
    <section class="footer">
-      <div class="footer-left">
-         <div class="footer-content">
-            <img src="logo.png" alt="logo">
-            <p>Bright Future Academy Footer. More information</p>
-            <div class="icons">
-               <a href="#"><i></i></a>
-               <a href="#"><i></i></a>
-               <a href="#"><i></i></a>
+      <div class="top-footer">
+         <div class="footer-left">
+            <div class="footer-content">
+               <img id="footer-logo" src="../icons/logo.png" alt="">
+               <p>Bright Future Academy Footer. More information</p>
+               <div class="icons-container">
+                  <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
+                  <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
+                  <a href="mailto:#"><img class="footer-icon" src="../icons/mail_icon.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer-right">
+            <div class="footer-content">
+               <h4>Popular Links</h4>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">FAQs</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-content">
+               <h4>Subjects</h4>
+               <ul>
+                  <li><a href="#">Math HL</a></li>
+                  <li><a href="#">Physics SL</a></li>
+                  <li><a href="#">Math SL</a></li>
+                  <li><a href="#">Economics SL</a></li>
+               </ul>
             </div>
          </div>
       </div>
-
-      <div class="footer-right">
-         <div class="footer-content">
-            <h4>Popular Links</h4>
-            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Contact</a></li>
-               <li><a href="#">About Us</a></li>
-               <li><a href="#">FAQs</a></li>
-            </ul>
-         </div>
-
-         <div class="footer-content">
-            <h4>Subjects</h4>
-            <ul>
-               <li><a href="#">Math HL</a></li>
-               <li><a href="#">Physics SL</a></li>
-               <li><a href="#">Math SL</a></li>
-               <li><a href="#">Economics SL</a></li>
-            </ul>
+      <div class="bottom-footer">
+         <div class="footer-misc">
+            <p>© Bright Future Academy 2024</p>
          </div>
       </div>
    </section>

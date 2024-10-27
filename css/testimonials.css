@@ -1,85 +1,16 @@
 
-/* GLOBAL DEFINITIONS */
-h2 {
-   font-size: 4em;
-   font-weight: bold;
-}
-h3 {
-   font-size: 3em;
-   font-weight: bold;
-}
-h4 {
-   font-size: 2em;
-   font-weight: 400;
-}
-
-* {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   background-color: white;
-   font-family: Monospaced, sans-serif;
-   font-weight: 300;
-   font-size: 16px;
-   color: #444444;
-   text-decoration: none;
-}
-
-header {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   padding: 22px 5%;
-   background-color: white;
-   border-bottom: 1px solid gray;
-}
-
-ul {
-   list-style: none;
-}
-ul li {
-   display: inline-block;
-   position: relative;
-}
-
-h2 {
-   font-size: 4em;
-   font-weight: bold;
-}
-h3 {
-   font-size: 3em;
-   font-weight: bold;
-}
-h4 {
-   font-size: 2em;
-   font-weight: 400;
-}
-
-button {
-   padding: 12px 25px;
-   background-color: white;
-   border: 1px solid gray;
-   cursor: pointer;
-}
-button:hover {
-   border-color: black;
-}
-
-
 
 /* GLOBAL CLASSES */
 .header-text {
    justify-content: center;
    text-align: center;
-   padding-top: 50px;
+   padding-top: 100px;
 }
-
-
 
 
 /* TESTIMONIALS STYLING */
 .testimonials-container {
-   padding: 50px;
+   padding: 0 7%;
    display: flex;
    flex-direction: row;
 }
@@ -88,9 +19,22 @@ button:hover {
    flex-direction: column;
 }
 .testimonial {
+   max-width: 500px;
    padding: 25px;
-   margin: 15px;
-   border: 1px solid gray;
+   margin: 18px;
+   border: 1px solid var(--primary);
+}
+.testimonial2 {
+   max-width: 500px;
+   padding: 25px;
+   margin: 18px;
+   background: var(--misc_1);
+}
+.testimonial3 {
+   max-width: 500px;
+   padding: 25px;
+   margin: 18px;
+   background: var(--misc_2);
 }
 .quote {
    font-style: italic;
@@ -98,172 +42,13 @@ button:hover {
 }
 .student-name {
    font-weight: bold;
-   margin-bottom: 2px;
+   margin-bottom: 5px;
 }
 .rating {
    width: 150px;
    height: 75px;
    padding: -25px;
 }
-
-
-
-/* NAVBAR STYLING */
-.dropdown {
-   border: 1px solid #4d4d4d;
-   width: max-content;
-   margin-top: 15px;
-   background: white;
-   position: absolute;
-   display: none;
-   z-index: 999;     /* most infront in the screen */
-}
-
-
-#pageLinks .dropdown li {
-   display: block;
-   margin: 12px;
-   padding: 0px;
-   flex-direction: column;
-   width: auto;
-   align-items: center;
-}
-
-#pageLinks .dropdown li a {
-   display: block;
-   padding: 10px;
-   color: #444444;
-   text-decoration: none;
-   text-align: center;
+.uni {
    font-size: 14px;
-   transition: all 0.3s ease;
 }
-#pageLinks .dropdown li a:hover {
-   color: black;
-   text-decoration: none;
-   transform: translateY(-1px) translateX(2px);
-}
-
-#pageLinks {
-   display: flex;
-   width: auto;
-   margin-right: 50px;
-}
-
-#pageLinks li {
-   display: inline-block;
-   width: fit-content;
-   padding: 8px;
-   background-color: white;
-   margin: 5px;
-}
-#pageLinks li:hover ul.dropdown {
-   display: block;
-}
-
-#pageLinks li a {
-   transition: all 0.3s ease;
-   padding: 15px;
-}
-#pageLinks li a:hover {
-   color: black;
-   transition: all 0.3s ease;
-}
-#logo-link {
-   padding: 0;
-   margin-right: auto;
-}
-#logo {
-   cursor: pointer;
-   width: 240px;
-   height: 40px;
-}
-#list_icon {
-   width: 18px;
-   height: 18px;
-   margin-right: 10px;
-}
-#CTA-button {
-   display: flex;
-   align-items: center;
-}
-
-
-/* FOOTER STYLING */
-.footer {
-   border-top: 1px solid gray;
-   margin-top: 100px;
-   padding: 80px 15%;
-   background: #fdfaf6;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: absolute;
-   list-style: none;
-   width: 100%;
-}
-
-.footer-content {
-   background: #fdfaf6;
-}
-
-/* Left side of footer */
-#footer-logo {
-   height: 20%;
-   width: 20%;
-}
-.footer-content p {
-   background: #fdfaf6;
-   color: #4d4d4d;
-   font-size: 14px;
-   margin-top: 10px;
-}
-.icons-container {
-   margin-top: 10px;
-   background: #fdfaf6;
-}
-.footer-icon {
-   background: #fdfaf6;
-   height: 24px;
-   width: 24px;
-   margin-right: 5px;
-}
-
-
-/* Right side of footer */
-.footer-right {
-   display: flex;
-   justify-content: space-evenly;
-}
-
-.footer-content ul {
-   background: #fdfaf6;
-}
-
-.footer-content h4 {
-   width: 100%;
-   color: #4d4d4d;
-   background: #fdfaf6;
-   margin-bottom: 20px;
-   font-size: 18px;
-   margin-right: 40px;
-}
-
-.footer-content li {
-   display: block;
-   margin-bottom: 16px;
-}
-
-.footer-content li a {
-   display: block;
-   color: #4d4d4d;
-   font-size: 12px;
-   font-weight: 400;
-   transition: all 0.4s ease;
-   background: #fdfaf6;
-}
-
-.footer-content li a:hover {
-   transform: translateX(-2px) translateY(-3px);
-}
-
