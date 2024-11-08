@@ -76,6 +76,9 @@ button:hover {
    background-color: var(--button-hover);
 }
 
+a {
+   color: black;
+}
 
 /* GLOBAL CLASSES */
 .header-text {
@@ -176,6 +179,7 @@ button:hover {
    color: white;
    display: flex;
    align-items: center;
+   border-radius: 2px;
 }
 
 

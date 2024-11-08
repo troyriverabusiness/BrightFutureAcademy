@@ -230,8 +230,46 @@ td {
    display: flex;
    flex-direction: column;
 }
-#topics-list {
-   display: block;
+
+#topics {
+   background: white;
+   border: none;
+   border-spacing: 0;
+}
+#topics td {
+   padding: 5px;
+}
+.class-title td {
+   font-weight: bold;
+   border-bottom: 1px solid lightgray;
+   border-left: 1px solid lightgray;
+   border-top: none;
+}
+.class-title td:first-child {
+   border: none;
+}
+#topics td {
+   border-left: 1px solid lightgray;
+   border-top: 1px solid lightgray;
+}
+#topics td:first-child {
+   border-top: 1px solid lightgray;
+   border-left: none;
+}
+
+.subtopic {
+   padding: 2px 5px;
+   background: orange;
+   width: fit-content;
+   border-radius: 5px;
+   margin-bottom: 5px;
+}
+.subtopic2 {
+   padding: 2px 5px;
+   background: lightblue;
+   width: fit-content;
+   border-radius: 5px;
+   margin-bottom: 5px;
 }
 
 
@@ -249,7 +287,8 @@ td {
    padding-top: 0;
 }
 #calendar {
-   max-width: 65%;
+   height: 400px;
+   width: auto;
    flex-basis: 60%;
 }
 

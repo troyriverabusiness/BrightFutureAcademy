@@ -8,7 +8,7 @@
 }
 
 .header-text-button {
-   padding: 100px;
+   padding: 40px;
 }
 .header-text-button h4 {
    font-weight: bold;
@@ -32,16 +32,10 @@
 .page-header-text {
    display: flex; flex-direction: column; align-items: center;
    margin: 50px auto;
-   background: transparent;
-}
-.page-header-text p {
-   margin: 0;
-   background: transparent;
 }
 .page-header-text h2 {
-   background: transparent;
+   margin-bottom: 20px;
 }
-
 
 /* Image Section STYLING */
 .image-section-container {
@@ -81,7 +75,7 @@
    border-radius: 15px;
    grid-row: 1;
    padding: 20px;
-   margin-right: 100px;
+   margin-right: 50px;
 }
 .profile-pic {
    width: 80px;
@@ -90,7 +84,10 @@
    margin-bottom: 20px;
 }
 .hiring {
+   width: fit-content;
+   margin-left: 3%;
    border: 1px solid var(--primary);
+   border-radius: 0 40px 0 40px;
 }
 
 
