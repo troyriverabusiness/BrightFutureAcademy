@@ -1,3 +1,19 @@
+:root {
+   --highlight1: #fde5cb;
+   --highlight2: #d1fbea;
+   --highlight3: #fdf4c4;
+   --highlight4: #d1f1fd;
+   --highlight5: #fee2fd;
+
+   --text1: #99570d;
+   --text2: #0b784c;
+   --text3: #7d6a08;
+   --text4: #0e427b;
+   --text5: #581a71;
+}
+
+
+
 
 html {
    scroll-behavior: smooth;
@@ -60,7 +76,7 @@ table {
 .class-container {
    display: flex;
    flex-direction: column;
-   gap: 30px;
+   gap: 20px;
    padding: 60px 5%;
 }
 .main {
@@ -107,7 +123,7 @@ table {
    flex-basis: 30%;
 }
 #price {
-   font-size: 36px;
+   font-size: 40px;
 }
 
 .badges {
@@ -168,6 +184,7 @@ form button {
 .number-container {
    display: flex;
    flex-direction: row;
+   justify-content: center;
    gap: 30px;
 }
 .statistic {
@@ -231,47 +248,61 @@ td {
    flex-direction: column;
 }
 
+/* curriculum table */
 #topics {
    background: white;
    border: none;
    border-spacing: 0;
+   margin-top: 0;
+}
+#topics p {
+   width: fit-content;
+   text-wrap: nowrap;
+   padding: 2px 5px;
+   border-radius: 5px;
+   margin-bottom: 5px;
 }
 #topics td {
    padding: 5px;
-}
-.class-title td {
-   font-weight: bold;
+   border-left: 1px solid lightgray;
    border-bottom: 1px solid lightgray;
-   border-left: 1px solid lightgray;
-   border-top: none;
 }
-.class-title td:first-child {
-   border: none;
+
+.topic {
+   justify-content: center;
+   padding-left: 20px;
 }
-#topics td {
-   border-left: 1px solid lightgray;
-   border-top: 1px solid lightgray;
-}
-#topics td:first-child {
-   border-top: 1px solid lightgray;
+
+/* no left border on table */
+#topics tr td:first-child {
    border-left: none;
+   padding-left: 20px;
+}
+#topics tr:last-child td {
+   border-bottom: none;
 }
 
-.subtopic {
-   padding: 2px 5px;
-   background: orange;
-   width: fit-content;
-   border-radius: 5px;
-   margin-bottom: 5px;
+/* colorful styling for the topics */
+.red {
+   background: var(--highlight3);
+   color: var(--text3);
 }
-.subtopic2 {
-   padding: 2px 5px;
-   background: lightblue;
-   width: fit-content;
-   border-radius: 5px;
-   margin-bottom: 5px;
+.blue {
+   background: var(--highlight4);
+   color: var(--text4);
 }
-
+.purple {
+   background: var(--highlight5);
+   color: var(--text5);
+}
+.yellow {
+   background: var(--highlight1);
+   color: var(--text1);
+}
+.green {
+   background: var(--highlight2);
+   color: var(--text2);
+}
 
 /* DATES SECTION STYLING */
 #date {

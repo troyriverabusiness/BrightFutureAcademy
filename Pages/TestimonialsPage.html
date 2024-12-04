@@ -10,37 +10,30 @@
 <body>
 
 <header>
-   <a id="logo-link" href="LandingPage.html">
-      <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
-   </a>
    <nav>
-      <ul id="pageLinks">
-         <li><a href="AboutUsPage.html">About Us</a></li>
-         <li>
-            <a href="SubjectsPage.html">Subjects  ▾</a>
-            <ul class="dropdown">
-               <li><a href="SpecificSubjectPage.html">Math AI SL</a></li>
-               <li><a href="SpecificSubjectPage.html">Math AA HL</a></li>
-               <li><a href="SpecificSubjectPage.html">Physics SL</a></li>
-               <li><a href="SpecificSubjectPage.html">Math AI HL</a></li>
-            </ul>
-         </li>
-         <li><a href="ContactPage.html">Contact</a></li>
-      </ul>
+      <div id="left">
+         <a id="logo-link" href="LandingPage.html">
+            <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+         </a>
+      </div>
+      <div id="right">
+         <a href="AboutUsPage.html">About Us</a>
+         <a href="SubjectsPage.html">Classes</a>
+         <a href="ContactPage.html">Contact</a>
+         <a class="CTA" href="GridViewSubjects.html">
+            <button id="CTA-button">
+               <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+               All Subjects
+            </button>
+         </a>
+      </div>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html">
-      <button id="CTA-button">
-         <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
-         All Subjects
-      </button>
-   </a>
 </header>
 
 <main>
    <section class="testimonials-grid">
       <div class="header-text">
          <h3>Testimonials</h3>
-         <br>
          <p>Hear success stories and experiences from students who have attended Bright Future Academy</p>
       </div>
       <div class="testimonials-container">
@@ -94,7 +87,12 @@
          <div class="footer-left">
             <div class="footer-content">
                <img id="footer-logo" src="../icons/logo.png" alt="">
-               <p>Bright Future Academy Footer. More information</p>
+               <div class="text">
+                  <p><span class="gradient">Bright Future Academy</span> in Alcobendas, Madrid. Providing excellent tutoring since 2023.</p>
+                  <p class="bold">Contact:</p>
+                  <p class="underline">+34 632 220 679</p>
+                  <p class="underline">rawad@brightfuture.es</p>
+               </div>
                <div class="icons-container">
                   <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
                   <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
@@ -107,27 +105,32 @@
             <div class="footer-content">
                <h4>Popular Links</h4>
                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">FAQs</a></li>
+                  <li><a href="LandingPage.html">Home</a></li>
+                  <li><a href="ContactPage.html">Contact</a></li>
+                  <li><a href="FAQsPage.html">FAQs</a></li>
+                  <li><a href="TestimonialsPage.html">Testimonials</a></li>
                </ul>
             </div>
 
             <div class="footer-content">
                <h4>Subjects</h4>
                <ul>
-                  <li><a href="#">Math HL</a></li>
-                  <li><a href="#">Physics SL</a></li>
-                  <li><a href="#">Math SL</a></li>
-                  <li><a href="#">Economics SL</a></li>
+                  <li><a href="GridViewSubjects.html#maths">Math</a></li>
+                  <li><a href="GridViewSubjects.html#physics">Physics</a></li>
+                  <li><a href="GridViewSubjects.html#chemistry">Chemistry</a></li>
+                  <li><a href="GridViewSubjects.html#economics">Economics</a></li>
                </ul>
             </div>
          </div>
       </div>
       <div class="bottom-footer">
          <div class="footer-misc">
-            <p>© Bright Future Academy 2024</p>
+            <p class="left-foot">© Bright Future Academy 2024</p>
+            <div class="right-foot">
+               <a href="#">Privacy Policy</a>
+               <a href="#">Cookie Settings</a>
+               <a href="#">Terms of Service</a>
+            </div>
          </div>
       </div>
    </section>

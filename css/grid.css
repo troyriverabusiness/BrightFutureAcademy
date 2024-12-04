@@ -14,13 +14,19 @@ h3 {
    font-size: 2em;
    font-weight: bold;
    margin-left: var(--left-distance);
-   margin-top: 40px;
+   margin-top: 20px;
+   padding-top: 20px;
 }
 
+.coming-soon {
+   margin-top: 10px;
+   margin-left: var(--left-distance);
+}
 
 .header {
    padding: 50px 0 50px var(--left-distance);
-   background: var(--background_alt);
+   background-size: cover;
+   background: url("../images/classheader.jpg") center;
 }
 .header p {
    font-size: 18px;
@@ -63,12 +69,13 @@ h3 {
    margin: 15px;
 }
 .product-image {
-   width: 100%;
+   height: 145px;
+   width: 262px;
    object-fit: cover;
    border-radius: 8px;
 }
 .badges {
-   padding-top: 5px;
+   padding-top: 6px;
    display: flex;
    flex-direction: row;
    gap: 5px;

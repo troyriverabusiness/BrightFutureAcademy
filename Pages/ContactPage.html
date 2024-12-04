@@ -10,30 +10,24 @@
 <body>
 
 <header>
-   <a id="logo-link" href="LandingPage.html">
-      <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
-   </a>
    <nav>
-      <ul id="pageLinks">
-         <li><a href="AboutUsPage.html">About Us</a></li>
-         <li>
-            <a href="SubjectsPage.html">Subjects  ▾</a>
-            <ul class="dropdown">
-               <li><a href="SpecificSubjectPage.html">Math AI SL</a></li>
-               <li><a href="SpecificSubjectPage.html">Math AA HL</a></li>
-               <li><a href="SpecificSubjectPage.html">Physics SL</a></li>
-               <li><a href="SpecificSubjectPage.html">Math AI HL</a></li>
-            </ul>
-         </li>
-         <li><a href="ContactPage.html">Contact</a></li>
-      </ul>
+      <div id="left">
+         <a id="logo-link" href="LandingPage.html">
+            <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+         </a>
+      </div>
+      <div id="right">
+         <a href="AboutUsPage.html">About Us</a>
+         <a href="SubjectsPage.html">Classes</a>
+         <a href="ContactPage.html">Contact</a>
+         <a class="CTA" href="GridViewSubjects.html">
+            <button id="CTA-button">
+               <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+               All Subjects
+            </button>
+         </a>
+      </div>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html">
-      <button id="CTA-button">
-         <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
-         All Subjects
-      </button>
-   </a>
 </header>
 
 <main>
@@ -51,40 +45,37 @@
          <table>
             <tr>
                <td class="first">Email</td>
-               <td class="first"><a class="mail" href="mailto:#">brightfutureacademy@gmail.com</a></td>
+               <td class="first"><a class="mail" href="mailto:rawad@brightfuture.es">rawad@brightfuture.es</a></td>
             </tr>
             <tr>
                <td class="first">Phone</td>
-               <td class="first">+34 123 456 987</td>
+               <td class="first">+34 632 220 679</td>
             </tr>
             <tr>
                <td class="first">Address</td>
                <td class="first">Av. de Bruselas, 5, 28108 Alcobendas, Madrid, Spain</td>
             </tr>
          </table>
-
       </div>
       <div class="contact-form-right">
-         <form action="">
+         <form id="contact-form" action="">
             <div class="input-group" id="first">
                <label>Name</label>
-               <input type="text">
+               <input id="name" type="text" required>
             </div>
             <div class="input-group">
                <label>Email</label>
-               <input type="text">
+               <input id="email" type="email" required>
             </div>
-
             <label>Message</label>
-            <textarea rows="10" placeholder="Your Message"></textarea>
-
+            <textarea id="message" rows="10" placeholder="Your Message" required></textarea>
             <div class="terms-and-conditions">
-               <input id="check" type="checkbox">
+               <input id="check" type="checkbox" required>
                <p id="terms">I accept the terms and conditions</p>
             </div>
-
             <button class="submit" type="submit">Submit</button>
          </form>
+
       </div>
    </section>
 
@@ -102,7 +93,7 @@
             </tr>
             <tr class="group-end">
                <td></td>
-               <td>jdguantarosda@iclo.org</td>
+               <td>rawad@brightfuture.es</td>
             </tr>
             <tr>
                <td><img class="icon" src="../icons/" alt=""></td>
@@ -110,7 +101,7 @@
             </tr>
             <tr class="group-end">
                <td></td>
-               <td>+34 1236943278</td>
+               <td>+34 632 220 679</td>
             </tr>
             <tr>
                <td><img class="icon" src="../icons/" alt=""></td>
@@ -121,7 +112,6 @@
                <td>Av. de Bruselas, 5, 28108 Alcobendas, Madrid, Spain</td>
             </tr>
          </table>
-
       </div>
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.492084121064!2d-3.6339061609226095!3d40.53071628888592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229a1b2eb79cd%3A0x664bad1eeef7c8b5!2sBright%20Future%20Academy!5e0!3m2!1sen!2ses!4v1726249501638!5m2!1sen!2ses" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -133,7 +123,12 @@
          <div class="footer-left">
             <div class="footer-content">
                <img id="footer-logo" src="../icons/logo.png" alt="">
-               <p>Bright Future Academy Footer. More information</p>
+               <div class="text">
+                  <p><span class="gradient">Bright Future Academy</span> in Alcobendas, Madrid. Providing excellent tutoring since 2023.</p>
+                  <p class="bold">Contact:</p>
+                  <p class="underline">+34 632 220 679</p>
+                  <p class="underline">rawad@brightfuture.es</p>
+               </div>
                <div class="icons-container">
                   <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
                   <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
@@ -146,27 +141,32 @@
             <div class="footer-content">
                <h4>Popular Links</h4>
                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">FAQs</a></li>
+                  <li><a href="LandingPage.html">Home</a></li>
+                  <li><a href="ContactPage.html">Contact</a></li>
+                  <li><a href="FAQsPage.html">FAQs</a></li>
+                  <li><a href="TestimonialsPage.html">Testimonials</a></li>
                </ul>
             </div>
 
             <div class="footer-content">
                <h4>Subjects</h4>
                <ul>
-                  <li><a href="#">Math HL</a></li>
-                  <li><a href="#">Physics SL</a></li>
-                  <li><a href="#">Math SL</a></li>
-                  <li><a href="#">Economics SL</a></li>
+                  <li><a href="GridViewSubjects.html#maths">Math</a></li>
+                  <li><a href="GridViewSubjects.html#physics">Physics</a></li>
+                  <li><a href="GridViewSubjects.html#chemistry">Chemistry</a></li>
+                  <li><a href="GridViewSubjects.html#economics">Economics</a></li>
                </ul>
             </div>
          </div>
       </div>
       <div class="bottom-footer">
          <div class="footer-misc">
-            <p>© Bright Future Academy 2024</p>
+            <p class="left-foot">© Bright Future Academy 2024</p>
+            <div class="right-foot">
+               <a href="#">Privacy Policy</a>
+               <a href="#">Cookie Settings</a>
+               <a href="#">Terms of Service</a>
+            </div>
          </div>
       </div>
    </section>

@@ -10,30 +10,24 @@
 <body>
 
 <header>
-   <a id="logo-link" href="LandingPage.html">
-      <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
-   </a>
    <nav>
-      <ul id="pageLinks">
-         <li><a href="AboutUsPage.html">About Us</a></li>
-         <li>
-            <a href="SubjectsPage.html">Subjects  ▾</a>
-            <ul class="dropdown">
-               <li><a href="SpecificSubjectPage.html">Math AI SL</a></li>
-               <li><a href="SpecificSubjectPage.html">Math AA HL</a></li>
-               <li><a href="SpecificSubjectPage.html">Physics SL</a></li>
-               <li><a href="SpecificSubjectPage.html">Math AI HL</a></li>
-            </ul>
-         </li>
-         <li><a href="ContactPage.html">Contact</a></li>
-      </ul>
+      <div id="left">
+         <a id="logo-link" href="LandingPage.html">
+            <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+         </a>
+      </div>
+      <div id="right">
+         <a href="AboutUsPage.html">About Us</a>
+         <a href="SubjectsPage.html">Classes</a>
+         <a href="ContactPage.html">Contact</a>
+         <a class="CTA" href="GridViewSubjects.html">
+            <button id="CTA-button">
+               <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+               All Subjects
+            </button>
+         </a>
+      </div>
    </nav>
-   <a class="CTA" href="GridViewSubjects.html">
-      <button id="CTA-button">
-         <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
-         All Subjects
-      </button>
-   </a>
 </header>
 
 <main>
@@ -57,11 +51,10 @@
          <div class="main">
             <div class="info">
                <h3>Math Application and Interpretation HL</h3>
-               <p>Here is where a brief overview of the class is going to be etc</p>
+               <p>The class tackles all HL and SL topics of the Math AI curriculum. At HL, the SL subjects are taught and finished in the first year (Grade 11), and the HL subjects are explored in the second year (Grade 12). This math subject is less abstract and has more practical topics in comparison to Math AA. Potential fields where this math is useful are: Finance, Economics, Computer Science, and more.</p>
 
-               <p>Shorter one liners</p>
-               <p>Short other line </p>
-               <p>finally another line</p>
+               <p><span style="font-weight: bold;">GDC</span> (Graphical Display Calculator) is required for all the sessions</p>
+               <p>Classes follow a flexible plan, ensuring the topics covered at BFA support the topics taught at their school</p>
 
                <div class="details-box">
                   <div class="quick-links">
@@ -101,22 +94,20 @@
             </div>
          </div>
       </div>
-
-
    </section>
 
    <section id="details">
       <div class="details-container">
-         <h3>How is the class structured</h3>
-         <p>Learn how the class is optimized for the most efficient learning outcome and student ability.</p>
+         <h3>Class Structure</h3>
+         <p>To make the most of our 2 hour weekly sessions, the class is structured for maximising learning and understanding of the topic. The sessions are designed to focus on a topic and all of its sub-areas, to ensure complete understanding and knowledge.</p>
          <div class="number-container">
             <div class="statistic">
-               <h4>50% Theory explanation</h4>
-               <p>of our students are sigmas</p>
+               <h4>50% Theory</h4>
+               <p>Time dedicated to explaining all areas and sub-topics relevant to class objective</p>
             </div>
             <div class="statistic">
-               <h4>50% Exercise practice</h4>
-               <p>of our students are alpha</p>
+               <h4>50% Exercises</h4>
+               <p>Practical application of knowledge learnt to build exam ability and confidence</p>
             </div>
          </div>
       </div>
@@ -157,73 +148,94 @@
          <h4>Topics covered</h4>
          <table id="topics">
             <tr class="class-title">
-               <td></td>
+               <td class="topic"></td>
                <td>Math AI HL</td>
                <td>Math AI SL</td>
             </tr>
             <tr>
-               <td>Topic 1: Number & Algebra</td>
+               <td class="topic">Topic 1: Number & Algebra</td>
                <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
+                  <p class="red">Complex and Matrix</p>
+                  <p class="blue">Adding sinusoidal functions</p>
+                  <p class="purple">Eigenvalues and Eigenvectors</p>
                </td>
                <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
-               </td>
-            </tr>
-            <tr>
-               <td>Topic 2: Functions</td>
-               <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
-               </td>
-               <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
+                  <p class="yellow">Sequences and Series</p>
+                  <p class="red">Arithmetic</p>
+                  <p class="red">Geometric</p>
+                  <p class="green">Finance</p>
+                  <p class="yellow">Scientific Notation</p>
                </td>
             </tr>
             <tr>
-               <td>Topic 3: Geometry and Trigonometry</td>
+               <td class="topic">Topic 2: Functions</td>
                <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
+                  <p class="green">Composite functions</p>
+                  <p class="yellow">Inverse functions</p>
+                  <p class="blue">Transformation</p>
+                  <p class="purple">Logistic functions</p>
+                  <p class="blue">Polynomials</p>
+                  <p class="blue">Linearization</p>
                </td>
                <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
-               </td>
-            </tr>
-            <tr>
-               <td>Topic 4: Probability & Statistics</td>
-               <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
-               </td>
-               <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
+                  <p class="blue">Linear</p>
+                  <p class="green">Quadratic</p>
+                  <p class="yellow">Domain and Range</p>
+                  <p class="red">Exponents and Logarithms</p>
                </td>
             </tr>
             <tr>
-               <td>Topic 5: Calculus</td>
+               <td class="topic">Topic 3: Geometry & Trigonometry</td>
                <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
+                  <p class="red">Advanced trigonometric functions</p>
+                  <p class="red">Advanced trigonometric equations</p>
+                  <p class="green">Vectors</p>
+                  <p class="purple">Graph Theory</p>
                </td>
                <td>
-                  <p class="subtopic">Binomial Theorem</p>
-                  <p class="subtopic2">Mathematical Induction</p>
-                  <p class="subtopic2">Complex Numbers</p>
+                  <p class="blue">Bearings</p>
+                  <p class="blue">Navigation</p>
+                  <p class="yellow">Sine and Cosine rule</p>
+                  <p class="green">Modelling functions</p>
+               </td>
+            </tr>
+            <tr>
+               <td class="topic">Topic 4: Probability & Statistics</td>
+               <td>
+                  <p class="blue">Poisson Distribution</p>
+                  <p class="red">Central limit theory</p>
+                  <p class="purple">Advanced Hypothesis Testing</p>
+                  <p class="yellow">Confidence Intervals</p>
+                  <p class="red">Type 1 & 2 Errors</p>
+                  <p class="green">Critical Region</p>
+               </td>
+               <td>
+                  <p class="blue">Hypothesis Testing</p>
+                  <p class="green">Spearman's rank</p>
+                  <p class="blue">Probability</p>
+                  <p class="red">Regression</p>
+                  <p class="yellow">Statistics</p>
+                  <p class="blue">Normal Distribution</p>
+                  <p class="purple">Binomial Distribution</p>
+               </td>
+            </tr>
+            <tr>
+               <td class="topic">Topic 5: Calculus</td>
+               <td>
+                  <p class="red">Advanced Differentiation</p>
+                  <p class="red">Advanced Integration</p>
+                  <p class="blue">Concavity</p>
+                  <p class="yellow">Related Rates</p>
+                  <p class="yellow">Kinematics</p>
+                  <p class="purple">Areas & Volumes of revolution</p>
+                  <p class="purple">Slope Fields</p>
+               </td>
+               <td>
+                  <p class="green">Derivatives</p>
+                  <p class="blue">Tangent and Normal</p>
+                  <p class="yellow">Optimization</p>
+                  <p class="red">Trapezium Rule</p>
+                  <p class="green">Integrals</p>
                </td>
             </tr>
          </table>
@@ -245,7 +257,12 @@
          <div class="footer-left">
             <div class="footer-content">
                <img id="footer-logo" src="../icons/logo.png" alt="">
-               <p>Bright Future Academy Footer. More information</p>
+               <div class="text">
+                  <p><span class="gradient">Bright Future Academy</span> in Alcobendas, Madrid. Providing excellent tutoring since 2023.</p>
+                  <p class="bold">Contact:</p>
+                  <p class="underline">+34 632 220 679</p>
+                  <p class="underline">rawad@brightfuture.es</p>
+               </div>
                <div class="icons-container">
                   <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
                   <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
@@ -258,27 +275,32 @@
             <div class="footer-content">
                <h4>Popular Links</h4>
                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">FAQs</a></li>
+                  <li><a href="LandingPage.html">Home</a></li>
+                  <li><a href="ContactPage.html">Contact</a></li>
+                  <li><a href="FAQsPage.html">FAQs</a></li>
+                  <li><a href="TestimonialsPage.html">Testimonials</a></li>
                </ul>
             </div>
 
             <div class="footer-content">
                <h4>Subjects</h4>
                <ul>
-                  <li><a href="#">Math HL</a></li>
-                  <li><a href="#">Physics SL</a></li>
-                  <li><a href="#">Math SL</a></li>
-                  <li><a href="#">Economics SL</a></li>
+                  <li><a href="GridViewSubjects.html#maths">Math</a></li>
+                  <li><a href="GridViewSubjects.html#physics">Physics</a></li>
+                  <li><a href="GridViewSubjects.html#chemistry">Chemistry</a></li>
+                  <li><a href="GridViewSubjects.html#economics">Economics</a></li>
                </ul>
             </div>
          </div>
       </div>
       <div class="bottom-footer">
          <div class="footer-misc">
-            <p>© Bright Future Academy 2024</p>
+            <p class="left-foot">© Bright Future Academy 2024</p>
+            <div class="right-foot">
+               <a href="#">Privacy Policy</a>
+               <a href="#">Cookie Settings</a>
+               <a href="#">Terms of Service</a>
+            </div>
          </div>
       </div>
    </section>

@@ -1,0 +1,89 @@
+:root {
+   --default: #ecfbf9;
+   --questionfill: #a7dfd7;
+   --active: #ccefea;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+#header-text {
+   padding: 40px;
+   text-align: center;
+}
+#header-text h3 {
+   margin-bottom: 30px;
+}
+#header-text p {
+   margin-bottom: 10px;
+}
+
+/* FAQs Section STYLING  */
+.FAQs {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.FAQs ul {
+   display: flex;
+   flex-direction: column;
+}
+.FAQs ul li h4 {
+   margin-bottom: 40px;
+   font-weight: bold;
+}
+
+.FAQs ul li {
+   text-align: left;
+}
+.QA-content {
+   width: 50%;
+}
+.QA-content li {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   border-radius: 5px;
+   background: var(--default);
+   margin-bottom: 10px;
+   line-height: 1.3rem;
+   transition: all 0.4s ease;
+}
+.QA-content li:hover {
+   background-color: var(--questionfill);
+}
+.QA-content li.active {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--active);
+}
+.QA-content li.active:hover {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--questionfill);
+}
+.question {
+   font-weight: bold;
+}
+.question::after {
+   content: "\002B";
+   font-size: 1.5rem;
+   position: absolute;
+   right: 1rem;
+}
+.answer {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.header-text h4 {
+   margin-bottom: 20px;
+}
+#contact-button {
+   margin-top: 20px;
+}
+

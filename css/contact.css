@@ -18,7 +18,8 @@ p {
 /* PAGE HEADER STYLING */
 .page-header {
    background-image: url("../images/contact_header.png");
-   background-size: 100%;
+   background-position: center;
+   background-size: cover;
    color: white;
    display: flex; align-items: flex-start;
 }

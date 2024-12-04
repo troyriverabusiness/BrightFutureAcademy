@@ -1,21 +1,6 @@
 
 
 /* GLOBAL CLASSES */
-.header-text {
-   justify-content: center;
-   text-align: center;
-   padding-top: 50px;
-}
-
-.header-text-button {
-   padding: 40px;
-}
-.header-text-button h4 {
-   font-weight: bold;
-}
-.header-text-button p {
-   margin: 20px 0;
-}
 
 .big-image {
    width: 50%;
@@ -37,6 +22,24 @@
    margin-bottom: 20px;
 }
 
+
+/* Mid Header STYLING */
+.header-text {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 50px 5%;
+   gap: 7%;
+}
+.header-text h3 {
+   flex-basis: 50%;
+}
+.header-text p {
+   flex-basis: 50%;
+   text-align: left;
+}
+
+
 /* Image Section STYLING */
 .image-section-container {
    padding: 50px;
@@ -50,7 +53,13 @@
    justify-content: center;
 }
 .image-header-text p {
-   margin: 20px 0;
+   padding: 20px;
+   border: 1px solid var(--primary);
+   margin: 40px 0;
+}
+#left p {
+   border: none;
+   padding: 0;
 }
 
 

@@ -1,10 +1,22 @@
+:root {
+   --fill1: #E2FAFA;
+   --gradient1: #c3efe2;
 
+   --fill2: #d7f8f7;
+   --gradient2: #a3e9ef;
+}
 
 /* GLOBAL CLASSES */
 .header-text {
    justify-content: center;
    text-align: center;
-   padding-top: 100px;
+   padding-top: 20px;
+}
+.header-text h3 {
+   margin-bottom: 30px;
+}
+.header-text p {
+   margin-bottom: 20px;
 }
 
 
@@ -28,13 +40,13 @@
    max-width: 500px;
    padding: 25px;
    margin: 18px;
-   background: var(--misc_1);
+   background: linear-gradient(150deg, var(--fill1) 0%, var(--gradient1) 70%, var(--fill1) 100%);
 }
 .testimonial3 {
    max-width: 500px;
    padding: 25px;
    margin: 18px;
-   background: var(--misc_2);
+   background: linear-gradient(195deg, var(--fill2) 0%, var(--gradient2) 60%, var(--fill2) 100%);
 }
 .quote {
    font-style: italic;
