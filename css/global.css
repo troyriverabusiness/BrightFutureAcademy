@@ -35,18 +35,25 @@
 }
 
 
-header {
+.header {
    position: fixed;
    width: 100%;
    top: 0;
    display: flex;
    align-items: center;
-   background: white;
+   background: linear-gradient(0, var(--background_alt) 0%, white 30%);
    padding: 10px 5%;
    z-index: 999;
+   transition: 0.3s ease-in-out;
 }
-body {
-   padding-top: 63px;
+.header.mask {
+   background: rgba(40, 40, 40, 0.98);
+}
+.header.mask a {
+   color: #DDDDDD;
+}
+.header.hidden {
+   transform: translateY(-100%);
 }
 
 h2 {
@@ -120,7 +127,20 @@ a {
    color: transparent;
 }
 
-
+.gradient2 {
+   font-size: inherit;
+   font-weight: 600;
+   width: fit-content;
+   background: linear-gradient(78deg, #DEF9F6 10%, #266C6C 130%);
+   background-clip: text;
+   color: transparent;
+}
+.navgradient {
+   font-size: inherit;
+   background: linear-gradient(0deg, var(--fill) 10%, white 40%);
+   background-clip: text;
+   color: transparent;
+}
 
 /* NAVBAR STYLING */
 nav {
@@ -174,7 +194,6 @@ nav {
    gap: 20px;
    flex-direction: column;
    width: 100%;
-
 }
 .top-footer {
    padding-bottom: 15px;
@@ -274,7 +293,9 @@ nav {
    transition: all 0.4s ease;
 }
 .footer-content li a:hover {
+   cursor: default;
    transform: translateX(-1px) translateY(-1px);
+   color: #F1D758;
 }
 
 .right-foot {

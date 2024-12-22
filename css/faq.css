@@ -67,6 +67,8 @@ html {
 }
 .question {
    font-weight: bold;
+   display: flex;
+   align-items: center;
 }
 .question::after {
    content: "\002B";
@@ -74,10 +76,14 @@ html {
    position: absolute;
    right: 1rem;
 }
+
+.QA-content li.active .question::after {
+   content: "\2212";
+}
 .answer {
    max-height: 0;
    overflow: hidden;
-   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+   transition: 0.3s ease-out;
 }
 
 .header-text h4 {

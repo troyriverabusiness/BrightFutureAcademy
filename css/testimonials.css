@@ -23,12 +23,14 @@
 /* TESTIMONIALS STYLING */
 .testimonials-container {
    padding: 0 7%;
-   display: flex;
-   flex-direction: row;
+   columns: 350px;
+   justify-content: center;
+   align-items: start;
 }
 .testimonials-column {
    display: flex;
    flex-direction: column;
+   justify-content: center;
 }
 .testimonial {
    max-width: 500px;

@@ -46,28 +46,50 @@
    font-weight: bold;
 }
 
+
+
 /* LANDING HEADER STYLING */
 .landing-header-text-button {
-   background-image: url("../images/landing_header.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   color: white;
-   padding: 150px 100px;
-   min-height: 200px;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: center;
+   height: calc(100vh);
+   width: 100vw;
+   color: white;
+   padding: 150px 100px;
+   position: relative;
 }
-.landing-header-top p {
-   width: 50%;
-   margin: 40px 0;
+.landing-header-text-button::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background-image: url("../images/landing_header.png");
+   background-size: cover;
+   background-position: center;
+   z-index: -1;
+
+   mask-image: url("../images/landing_mask.gif");
+   mask-size: cover;
+   mask-position: center;
+}
+.landing-header {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.landing-header p {
+   line-height: 1.5;
+   color: #d1d1d1;
+}
+.landing-header a {
+   width: fit-content;
 }
 .primary-button {
    border: 2px solid var(--button);
    border-radius: 0 20px 0 20px;
    background: var(--button-hover);
    text-color: white;
-   margin: 100px 0;
 }
 .primary-button:hover {
    background: var(--button);
@@ -252,6 +274,8 @@
 }
 .go-to-link {
    width: fit-content;
+   position: relative;
+   bottom: 0;
 }
 .go-to-link:hover {
    text-decoration: underline;
@@ -298,7 +322,7 @@
 
 /* PRICING PLAN SECTION STYLING */
 .grid-container {
-   padding: 10%;
+   padding: 7% 10%;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(4, 200px);
@@ -310,38 +334,69 @@
    height: 100%;
    padding: 20px;
    border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   overflow: hidden;
 }
-#pricing-title {
-   font-size: 60px;
+.wide {
+   background-color: #def9f6;
+   padding: 20px;
+   border-radius: 20px;
+   grid-row: 4;
+   grid-column: 2/5;
+   display: flex;
+   gap: 50px;
+   flex-direction: row;
+   overflow: hidden;
+}
+
+.texti {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.texti p {
+   font-size: 16px;
+}
+.texti .bold {
+   font-size: 20px;
+}
+.prices h4 {
+   font-size: 36px;
    font-weight: 600;
-   width: fit-content;
-   background: linear-gradient(56deg, var(--primary), var(--button-hover), var(--accent), var(--primary_dark));
+}
+.digit {
+   --gradiet_num: linear-gradient(0, #DEF9F6, #266C6C) ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 80px;
+   font-weight: 600;
+   background: var(--gradiet_num);
    background-clip: text;
    color: transparent;
 }
-#bento1 {
-   grid-row: 2;
-   grid-column: 2/4;
-}
-#bento2 {
-   grid-row: 3;
-   grid-column: 3/5;
-}
-#bento3 {
-   grid-row: 4;
-   grid-column: 2/5;
-}
 #bento-button {
-   background-color: lightgray;
+   background: url("../images/subjects_header.png");
+   background-size: cover;
+   color: var(--fill);
    font-weight: 500;
    font-size: 2rem;
    text-align: center;
+   text-decoration: underline;
+   border: 3px solid var(--primary);
 }
 #bento-img {
    padding: 0;
    border: 2px solid white;
 }
-
+.monthly {
+   font-size: 20px;
+   font-weight: 600;
+}
 
 .pricing {
    background: var(--background_alt);

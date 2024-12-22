@@ -23,12 +23,12 @@ h3 {
    margin-left: var(--left-distance);
 }
 
-.header {
+.page-header {
    padding: 50px 0 50px var(--left-distance);
    background-size: cover;
    background: url("../images/classheader.jpg") center;
 }
-.header p {
+.page-header p {
    font-size: 18px;
    margin-top: 20px;
 }

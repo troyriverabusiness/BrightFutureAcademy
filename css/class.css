@@ -193,10 +193,11 @@ form button {
    background: var(--fill);
    width: 100%;
    border-radius: 15px;
+   h4 {
+      margin-bottom: 10px;
+   }
 }
-.statistic h4 {
-   margin-bottom: 10px;
-}
+
 
 /* INTERLUDE HEADER SECTION STYLING */
 .interlude-container {
