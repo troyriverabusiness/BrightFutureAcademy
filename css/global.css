@@ -35,6 +35,10 @@
 }
 
 
+main {
+   padding-top: 62px;
+}
+
 .header {
    position: fixed;
    width: 100%;
@@ -45,9 +49,10 @@
    padding: 10px 5%;
    z-index: 999;
    transition: 0.3s ease-in-out;
+   margin-bottom: 60px;
 }
 .header.mask {
-   background: rgba(40, 40, 40, 0.98);
+   background: rgba(40, 40, 40, 1);
 }
 .header.mask a {
    color: #DDDDDD;
