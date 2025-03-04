@@ -34,6 +34,7 @@
 
 .header-text-button {
    padding: 50px 50px 0 50px;
+   margin-bottom: 20px;
 }
 .header-text-button h4 {
    font-weight: bold;
@@ -232,7 +233,9 @@
 .product-link {
    background: white;
    width: 300px;
-   display: block;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    text-decoration: none;
    padding: 18px;
    border: 1px solid var(--primary_dark);
@@ -275,6 +278,7 @@
 .go-to-link {
    width: fit-content;
    position: relative;
+   margin-top: auto;
    bottom: 0;
 }
 .go-to-link:hover {
