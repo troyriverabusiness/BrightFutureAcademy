@@ -1,7 +1,7 @@
 :root {
-   --text: black;
+   --text: #233939;
 
-   --background: white;
+   --background: #f6fffc;
    --background_alt: #EBFBFB;
    --fill: #E2FAFA;
 
@@ -32,11 +32,17 @@
    font-weight: 300;
    font-size: 16px;
    text-decoration: none;
+   overscroll-behavior: none;
 }
 
 
 main {
    padding-top: 62px;
+}
+
+p {
+   line-height: 1.5;
+   color: var(--text);
 }
 
 .header {
@@ -64,14 +70,17 @@ main {
 h2 {
    font-size: 4em;
    font-weight: bold;
+   color: var(--text);
 }
 h3 {
    font-size: 3em;
    font-weight: bold;
+   color: var(--text);
 }
 h4 {
    font-size: 2em;
    font-weight: 400;
+   color: var(--text);
 }
 
 ul {
@@ -97,7 +106,7 @@ button:hover {
 }
 
 a {
-   color: black;
+   color: var(--text);
 }
 
 .underline {
@@ -194,6 +203,7 @@ nav {
 .footer {
    margin-top: 50px;
    padding: 40px 10%;
+   position: relative;
    background: var(--footer-bg);
    display: flex;
    gap: 20px;

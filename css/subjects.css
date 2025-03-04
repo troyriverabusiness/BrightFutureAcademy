@@ -48,6 +48,9 @@
    width: 100%;
    background: var(--fill);
    border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 .title-container {
    display: flex;
@@ -154,9 +157,10 @@ td {
    position: relative;
    flex: 1;
    h4 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-weight: bold;
       font-size: 24px;
+      line-height: 1.2;
    }
    a {
       padding-top: 20px;

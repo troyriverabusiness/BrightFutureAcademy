@@ -125,7 +125,7 @@
    width: 100%;
 }
 .bottom-part {
-   padding: 40px 5% 100px 5%;
+   padding: 0 5% 100px 5%;
    display: flex;
    flex-direction: row;
    align-items: center;
