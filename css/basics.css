@@ -1,25 +1,4 @@
-:root {
-   --text: black;
 
-   --background: white;
-   --background_alt: #effffd;
-   --fill: #E2FAFA;
-
-   --primary: #3EB7B7;
-   --primary_dark: #17A3A3;
-   --secondary: #D8FCF4;
-
-   --bento-fill: #EBFBFB;
-
-   --button: #3EB7B7;
-   --button-hover:  #266C6C;
-
-   --accent: #38E1F3;
-
-   --misc_1: #DCF0FF;
-   --misc_2: #DFFBF4;
-   --misc_3: #E2FAFA;
-}
 
 /* GLOBAL CLASSES */
 .header-text {
