@@ -29,15 +29,22 @@
 
 
 /* LANDING HEADER STYLING */
+.image-header {
+   background: var(--footer-text);
+}
 .landing-header-text-button {
    display: flex;
    flex-direction: column;
    justify-content: center;
    height: calc(100vh - 63px);
    width: 100vw;
-   color: white;
-   padding: 150px 100px;
+   padding: 120px 150px;
    position: relative;
+
+   mask-image: url("../images/landing_mask.gif");
+   mask-size: 100vw 100vh;
+   mask-position: top;
+   mask-repeat: no-repeat;
 }
 .landing-header-text-button::before {
    content: '';
@@ -48,23 +55,21 @@
    background-position: center;
    z-index: -1;
 
-   mask-image: url("../images/landing_mask.gif");
-   mask-size: cover;
-   mask-position: center;
+
 }
 .landing-header {
    width: 40%;
    display: flex;
    flex-direction: column;
    gap: 40px;
+   p {
+      color: var(--background_alt);
+   }
+   h2 {
+      color: var(--background_alt);
+   }
 }
-.landing-header p {
-   line-height: 1.5;
-   color: #d1d1d1;
-}
-.landing-header a {
-   width: fit-content;
-}
+
 .primary-button {
    border: 2px solid var(--button);
    border-radius: 0 20px 0 20px;
@@ -80,7 +85,8 @@
 .offer-header {
    text-align: center;
    height: fit-content;
-   padding: 20px ;
+   padding: 20px;
+   display: none;
 }
 .offer-text-button {
    border: 2px groove var(--accent);
@@ -189,7 +195,7 @@
 .floatbg {
    width: 100%;
    background: var(--fill);
-   margin: 50px 5%;
+   margin: 80px 5%;
    border-radius: 25px;
 }
 .title {

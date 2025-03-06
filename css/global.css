@@ -4,6 +4,7 @@
    --background: #f6fffc;
    --background_alt: #EBFBFB;
    --fill: #E2FAFA;
+   --nav-dark: #142424;
 
    --footer-bg: #165C5C;
    --footer-text: black;
@@ -14,6 +15,7 @@
 
    --button: #3EB7B7;
    --button-hover:  #266C6C;
+   --hover-alt: #3b9494;
 
    --accent: #38E1F3;
 
@@ -32,7 +34,7 @@
    font-weight: 300;
    font-size: 16px;
    text-decoration: none;
-   overscroll-behavior: none;
+   overscroll-behavior: contain;
 }
 
 
@@ -45,27 +47,7 @@ p {
    color: var(--text);
 }
 
-.header {
-   position: fixed;
-   width: 100%;
-   top: 0;
-   display: flex;
-   align-items: center;
-   background: linear-gradient(0, var(--background_alt) 0%, white 30%);
-   padding: 10px 5%;
-   z-index: 999;
-   transition: 0.3s ease-in-out;
-   margin-bottom: 60px;
-}
-.header.mask {
-   background: rgba(40, 40, 40, 1);
-}
-.header.mask a {
-   color: #DDDDDD;
-}
-.header.hidden {
-   transform: translateY(-100%);
-}
+
 
 h2 {
    font-size: 4em;
@@ -120,17 +102,18 @@ a {
 .header-text {
    justify-content: center;
    text-align: center;
-   padding-top: 50px;
+   padding-top: 20px;
 }
 .header-text-button {
    padding: 40px;
+   h4 {
+      font-weight: bold;
+   }
+   p {
+      margin: 20px 0;
+   }
 }
-.header-text-button h4 {
-   font-weight: bold;
-}
-.header-text-button p {
-   margin: 20px 0;
-}
+
 
 .gradient {
    font-size: inherit;
@@ -155,8 +138,38 @@ a {
    background-clip: text;
    color: transparent;
 }
+.big-image {
+   height: 50%;
+   width: 50%;
+}
+
 
 /* NAVBAR STYLING */
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   display: flex;
+   align-items: center;
+   padding: 10px 2%;
+   background: var(--background_alt);
+   z-index: 999;
+   transition: 0.3s ease-in-out;
+   margin-bottom: 60px;
+   border-bottom: 2px solid var(--text);
+   a {
+      font-weight: 700;
+   }
+}
+.mask {
+   background: var(--nav-dark);
+}
+.header.mask a {
+   color: #DDDDDD;
+}
+.header.hidden {
+   transform: translateY(-100%);
+}
 nav {
    display: flex;
    flex-direction: row;
@@ -166,7 +179,7 @@ nav {
 #right {
    display: flex;
    flex-direction: row;
-   gap: 50px;
+   gap: 40px;
    align-items: center;
 }
 #right a {
@@ -177,7 +190,7 @@ nav {
    padding: 0;
 }
 #right a:hover {
-   color: var(--primary);
+   color: var(--hover-alt);
 }
 
 #logo {
@@ -191,11 +204,15 @@ nav {
    margin-right: 10px;
 }
 #CTA-button {
-   border: none;
-   color: white;
    display: flex;
    align-items: center;
-   border-radius: 2px;
+   justify-content: center;
+   border-radius: 30px;
+   background-color: var(--footer-bg);
+   font-weight: 700;
+}
+#CTA-button:hover {
+   background-color: var(--hover-alt);
 }
 
 
@@ -209,6 +226,9 @@ nav {
    gap: 20px;
    flex-direction: column;
    width: 100%;
+   p {
+      margin: 0;
+   }
 }
 .top-footer {
    padding-bottom: 15px;

@@ -11,17 +11,11 @@
 }
 h3 {
    font-size: 30px;
-   margin-bottom: 20px;
 }
 p {
-   line-height: 1.3em;
    margin-top: 20px;
    margin-bottom: 30px;
 }
-.footer p {
-   margin: 0;
-}
-
 .thick {
    font-weight: 500;
 }
@@ -36,12 +30,16 @@ p {
 }
 .page-header-text {
    align-self: flex-start;
-   margin: 80px var(--left);
-   background: transparent;
+   margin: 80px 5%;
+   h2 {
+      color: var(--background_alt);
+   }
+   p {
+      color: var(--background_alt);
+      font-weight: 500;
+   }
 }
-.page-header-text h2 {
-   margin-bottom: 30px;
-}
+
 
 
 /* CONTACT FORM STYLING */
