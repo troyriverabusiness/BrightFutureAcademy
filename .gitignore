@@ -7,3 +7,4 @@ dist
 images/
 icons/
 .editorconfig
+.DS_Store
