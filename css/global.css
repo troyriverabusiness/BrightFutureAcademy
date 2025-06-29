@@ -87,6 +87,27 @@ button:hover {
    background-color: var(--button-hover);
 }
 
+/* Button-style class for links that should look like buttons */
+.button-style {
+   display: inline-block;
+   padding: 12px 25px;
+   background-color: var(--button);
+   color: white !important;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: 1s;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 400;
+}
+.button-style:hover {
+   transition-duration: 0.2s;
+   background-color: var(--button-hover);
+   color: white !important;
+   text-decoration: none;
+}
+
 a {
    color: var(--text);
 }
@@ -286,6 +307,13 @@ nav {
    width: 18px;
    margin-right: 5px;
 }
+
+/* LinkedIn icons in team member sections */
+.team-member a img {
+   height: 14px;
+   width: 14px;
+}
+
 .icons a {
    color: black;
    font-size: 22px;
