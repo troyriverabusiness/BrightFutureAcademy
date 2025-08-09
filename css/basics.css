@@ -80,6 +80,27 @@
    background: var(--button);
 }
 
+/* Primary button with button-style class */
+.primary-button.button-style {
+   border: 2px solid var(--button);
+   border-radius: 0 20px 0 20px;
+   background: var(--button-hover);
+   color: white !important;
+   display: inline-block;
+   padding: 12px 25px;
+   cursor: pointer;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 400;
+   transition: 1s;
+}
+.primary-button.button-style:hover {
+   background: var(--button);
+   color: white !important;
+   text-decoration: none;
+   transition-duration: 0.2s;
+}
+
 
 /* OFFER HEADER STYLING */
 .offer-header {

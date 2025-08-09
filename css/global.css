@@ -236,6 +236,29 @@ nav {
    background-color: var(--hover-alt);
 }
 
+/* CTA button with button-style class */
+#CTA-button.button-style {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 30px;
+   background-color: var(--footer-bg);
+   font-weight: 700;
+   padding: 12px 25px;
+   color: white !important;
+   border: none;
+   cursor: pointer;
+   transition: 1s;
+   text-decoration: none;
+   text-align: center;
+}
+#CTA-button.button-style:hover {
+   transition-duration: 0.2s;
+   background-color: var(--hover-alt);
+   color: white !important;
+   text-decoration: none;
+}
+
 
 /* FOOTER STYLING */
 .footer {

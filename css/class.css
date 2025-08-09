@@ -165,6 +165,14 @@ form button {
    width: fit-content;
 }
 
+.required-note {
+   font-size: 14px;
+}
+
+.bold-text {
+   font-weight: bold;
+}
+
 
 /* CLASS DETAILS SECTION STYLING */
 #details {

@@ -115,6 +115,28 @@ textarea {
    transition: 0.3s;
 }
 
+/* Submit button with button-style class */
+.submit.button-style {
+   margin-top: 10px;
+   border-radius: 0;
+   transition: 0.3s;
+   display: inline-block;
+   padding: 12px 25px;
+   background-color: var(--button);
+   color: white !important;
+   border: none;
+   cursor: pointer;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 400;
+}
+.submit.button-style:hover {
+   transition-duration: 0.2s;
+   background-color: var(--button-hover);
+   color: white !important;
+   text-decoration: none;
+}
+
 
 /* CONTACT MAP STYLING */
 .contact-map-header {

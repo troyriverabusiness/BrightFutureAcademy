@@ -20,11 +20,9 @@
          <a href="AboutUsPage.html">About Us</a>
          <a href="SubjectsPage.html">Classes</a>
          <a href="ContactPage.html">Contact</a>
-         <a class="CTA" href="GridViewSubjects.html">
-            <button id="CTA-button">
-               <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
-               All Subjects
-            </button>
+         <a class="CTA button-style" href="GridViewSubjects.html" id="CTA-button">
+            <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+            All Subjects
          </a>
       </div>
    </nav>
@@ -53,7 +51,7 @@
                <h3>Math Application and Interpretation HL</h3>
                <p>The class tackles all HL and SL topics of the Math AI curriculum. At HL, the SL subjects are taught and finished in the first year (Grade 11), and the HL subjects are explored in the second year (Grade 12). This math subject is less abstract and has more practical topics in comparison to Math AA. Potential fields where this math is useful are: Finance, Economics, Computer Science, and more.</p>
 
-               <p><span style="font-weight: bold;">GDC</span> (Graphical Display Calculator) is required for all the sessions</p>
+               <p><span class="bold-text">GDC</span> (Graphical Display Calculator) is required for all the sessions</p>
                <p>Classes follow a flexible plan, ensuring the topics covered at BFA support the topics taught at their school</p>
 
                <div class="details-box">
@@ -75,7 +73,7 @@
                   <p class="badge">Grade 11</p>
                   <p class="badge">In-person</p>
                </div>
-               <form action="">
+               <form action="#">
                   <div class="form">
                      <p>Check Availability</p>
                      <label>
@@ -87,9 +85,9 @@
                      <label>
                         <input type="text" placeholder="Phone">
                      </label>
-                     <p style="font-size: 14px;">* = required</p>
+                     <p class="required-note">* = required</p>
                   </div>
-                  <a href="mailto:example@example.com?subject=Your%20Subject%20Here&body=This%20is%20the%20body%20of%20the%20email."><button class="submit" >Submit</button></a>
+                  <a href="mailto:example@example.com?subject=Your%20Subject%20Here&body=This%20is%20the%20body%20of%20the%20email." class="submit button-style">Submit</a>
                </form>
             </div>
          </div>
@@ -108,118 +106,122 @@
          <h3>Learning Objectives</h3>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
          <table>
-            <tr>
-               <td><img class="icon" src="../icons/tick.png" alt=""></td>
-               <td>Understand mathematical language</td>
-            </tr>
-            <tr>
-               <td><img class="icon" src="../icons/tick.png" alt=""></td>
-               <td>Be able to identify similar problems</td>
-            </tr>
-            <tr>
-               <td><img class="icon" src="../icons/tick.png" alt=""></td>
-               <td>Solve complex questions by roadmapping a solution</td>
-            </tr>
-            <tr>
-               <td><img class="icon" src="../icons/tick.png" alt=""></td>
-               <td>Understand and perform mathematical proofs</td>
-            </tr>
+            <tbody>
+               <tr>
+                  <td><img class="icon" src="../icons/tick.png" alt=""></td>
+                  <td>Understand mathematical language</td>
+               </tr>
+               <tr>
+                  <td><img class="icon" src="../icons/tick.png" alt=""></td>
+                  <td>Be able to identify similar problems</td>
+               </tr>
+               <tr>
+                  <td><img class="icon" src="../icons/tick.png" alt=""></td>
+                  <td>Solve complex questions by roadmapping a solution</td>
+               </tr>
+               <tr>
+                  <td><img class="icon" src="../icons/tick.png" alt=""></td>
+                  <td>Understand and perform mathematical proofs</td>
+               </tr>
+            </tbody>
          </table>
       </div>
       <div class="curriculum">
          <h4>Topics covered</h4>
          <table id="topics">
-            <tr class="class-title">
-               <td class="topic"></td>
-               <td>Math AI HL</td>
-               <td>Math AI SL</td>
-            </tr>
-            <tr>
-               <td class="topic">Topic 1: Number & Algebra</td>
-               <td>
-                  <p class="red">Complex and Matrix</p>
-                  <p class="blue">Adding sinusoidal functions</p>
-                  <p class="purple">Eigenvalues and Eigenvectors</p>
-               </td>
-               <td>
-                  <p class="yellow">Sequences and Series</p>
-                  <p class="red">Arithmetic</p>
-                  <p class="red">Geometric</p>
-                  <p class="green">Finance</p>
-                  <p class="yellow">Scientific Notation</p>
-               </td>
-            </tr>
-            <tr>
-               <td class="topic">Topic 2: Functions</td>
-               <td>
-                  <p class="green">Composite functions</p>
-                  <p class="yellow">Inverse functions</p>
-                  <p class="blue">Transformation</p>
-                  <p class="purple">Logistic functions</p>
-                  <p class="blue">Polynomials</p>
-                  <p class="blue">Linearization</p>
-               </td>
-               <td>
-                  <p class="blue">Linear</p>
-                  <p class="green">Quadratic</p>
-                  <p class="yellow">Domain and Range</p>
-                  <p class="red">Exponents and Logarithms</p>
-               </td>
-            </tr>
-            <tr>
-               <td class="topic">Topic 3: Geometry & Trigonometry</td>
-               <td>
-                  <p class="red">Advanced trigonometric functions</p>
-                  <p class="red">Advanced trigonometric equations</p>
-                  <p class="green">Vectors</p>
-                  <p class="purple">Graph Theory</p>
-               </td>
-               <td>
-                  <p class="blue">Bearings</p>
-                  <p class="blue">Navigation</p>
-                  <p class="yellow">Sine and Cosine rule</p>
-                  <p class="green">Modelling functions</p>
-               </td>
-            </tr>
-            <tr>
-               <td class="topic">Topic 4: Probability & Statistics</td>
-               <td>
-                  <p class="blue">Poisson Distribution</p>
-                  <p class="red">Central limit theory</p>
-                  <p class="purple">Advanced Hypothesis Testing</p>
-                  <p class="yellow">Confidence Intervals</p>
-                  <p class="red">Type 1 & 2 Errors</p>
-                  <p class="green">Critical Region</p>
-               </td>
-               <td>
-                  <p class="blue">Hypothesis Testing</p>
-                  <p class="green">Spearman's rank</p>
-                  <p class="blue">Probability</p>
-                  <p class="red">Regression</p>
-                  <p class="yellow">Statistics</p>
-                  <p class="blue">Normal Distribution</p>
-                  <p class="purple">Binomial Distribution</p>
-               </td>
-            </tr>
-            <tr>
-               <td class="topic">Topic 5: Calculus</td>
-               <td>
-                  <p class="red">Advanced Differentiation</p>
-                  <p class="red">Advanced Integration</p>
-                  <p class="blue">Concavity</p>
-                  <p class="yellow">Related Rates</p>
-                  <p class="yellow">Kinematics</p>
-                  <p class="purple">Areas & Volumes of revolution</p>
-                  <p class="purple">Slope Fields</p>
-               </td>
-               <td>
-                  <p class="green">Derivatives</p>
-                  <p class="blue">Tangent and Normal</p>
-                  <p class="yellow">Optimization</p>
-                  <p class="red">Trapezium Rule</p>
-                  <p class="green">Integrals</p>
-               </td>
-            </tr>
+            <tbody>
+               <tr class="class-title">
+                  <td class="topic"></td>
+                  <td>Math AI HL</td>
+                  <td>Math AI SL</td>
+               </tr>
+               <tr>
+                  <td class="topic">Topic 1: Number &amp; Algebra</td>
+                  <td>
+                     <p class="red">Complex and Matrix</p>
+                     <p class="blue">Adding sinusoidal functions</p>
+                     <p class="purple">Eigenvalues and Eigenvectors</p>
+                  </td>
+                  <td>
+                     <p class="yellow">Sequences and Series</p>
+                     <p class="red">Arithmetic</p>
+                     <p class="red">Geometric</p>
+                     <p class="green">Finance</p>
+                     <p class="yellow">Scientific Notation</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="topic">Topic 2: Functions</td>
+                  <td>
+                     <p class="green">Composite functions</p>
+                     <p class="yellow">Inverse functions</p>
+                     <p class="blue">Transformation</p>
+                     <p class="purple">Logistic functions</p>
+                     <p class="blue">Polynomials</p>
+                     <p class="blue">Linearization</p>
+                  </td>
+                  <td>
+                     <p class="blue">Linear</p>
+                     <p class="green">Quadratic</p>
+                     <p class="yellow">Domain and Range</p>
+                     <p class="red">Exponents and Logarithms</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="topic">Topic 3: Geometry &amp; Trigonometry</td>
+                  <td>
+                     <p class="red">Advanced trigonometric functions</p>
+                     <p class="red">Advanced trigonometric equations</p>
+                     <p class="green">Vectors</p>
+                     <p class="purple">Graph Theory</p>
+                  </td>
+                  <td>
+                     <p class="blue">Bearings</p>
+                     <p class="blue">Navigation</p>
+                     <p class="yellow">Sine and Cosine rule</p>
+                     <p class="green">Modelling functions</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="topic">Topic 4: Probability &amp; Statistics</td>
+                  <td>
+                     <p class="blue">Poisson Distribution</p>
+                     <p class="red">Central limit theory</p>
+                     <p class="purple">Advanced Hypothesis Testing</p>
+                     <p class="yellow">Confidence Intervals</p>
+                     <p class="red">Type 1 & 2 Errors</p>
+                     <p class="green">Critical Region</p>
+                  </td>
+                  <td>
+                     <p class="blue">Hypothesis Testing</p>
+                     <p class="green">Spearman's rank</p>
+                     <p class="blue">Probability</p>
+                     <p class="red">Regression</p>
+                     <p class="yellow">Statistics</p>
+                     <p class="blue">Normal Distribution</p>
+                     <p class="purple">Binomial Distribution</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="topic">Topic 5: Calculus</td>
+                  <td>
+                     <p class="red">Advanced Differentiation</p>
+                     <p class="red">Advanced Integration</p>
+                     <p class="blue">Concavity</p>
+                     <p class="yellow">Related Rates</p>
+                     <p class="yellow">Kinematics</p>
+                     <p class="purple">Areas &amp; Volumes of revolution</p>
+                     <p class="purple">Slope Fields</p>
+                  </td>
+                  <td>
+                     <p class="green">Derivatives</p>
+                     <p class="blue">Tangent and Normal</p>
+                     <p class="yellow">Optimization</p>
+                     <p class="red">Trapezium Rule</p>
+                     <p class="green">Integrals</p>
+                  </td>
+               </tr>
+            </tbody>
          </table>
       </div>
    </section>
@@ -246,9 +248,9 @@
                   <p class="underline">rawad@brightfuture.es</p>
                </div>
                <div class="icons-container">
-                  <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
-                  <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
-                  <a href="mailto:#"><img class="footer-icon" src="../icons/mail_icon.png" alt=""></a>
+                  <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt="Instagram"></a>
+                  <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt="LinkedIn"></a>
+                  <a href="mailto:rawad@brightfuture.es"><img class="footer-icon" src="../icons/mail_icon.png" alt="Email"></a>
                </div>
             </div>
          </div>
