@@ -393,3 +393,10 @@ nav {
 .right-foot a {
    font-size: 12px;
 }
+
+/* Current page highlighting for navigation */
+#right a.current-page {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: underline;
+}
