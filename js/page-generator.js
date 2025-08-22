@@ -18,7 +18,7 @@ class PageGenerator {
         try {
             // Load the master subject data
             const subjectData = await this.loadSubjectData();
-            
+
             // Create output directory if it doesn't exist
             if (!fs.existsSync(this.outputDir)) {
                 fs.mkdirSync(this.outputDir, { recursive: true });
@@ -100,9 +100,13 @@ class PageGenerator {
             html = html.replace(new RegExp(placeholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), value);
         });
 
-        // Fix relative paths for generated pages (they're in Pages/generated/ so need to go up 2 levels)
+        // Fix paths for generated pages (they're in Pages/generated/)
+        // Assets (CSS, JS, images, icons) need to go up 2 levels to root
         html = html.replace(/href="\.\.\//g, 'href="../../');
         html = html.replace(/src="\.\.\//g, 'src="../../');
+        
+        // Navigation links need to go up 1 level to Pages directory
+        html = html.replace(/href="([^"]*\.html)"/g, 'href="../$1"');
 
         return html;
     }
@@ -123,7 +127,7 @@ class PageGenerator {
         subject.learningObjectives.forEach(objective => {
             html += `
             <tr>
-               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td><img class="icon" src="../../icons/tick.png" alt=""></td>
                <td>${objective}</td>
             </tr>`;
         });
