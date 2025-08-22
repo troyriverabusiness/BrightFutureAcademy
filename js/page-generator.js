@@ -10,7 +10,7 @@ const path = require('path');
 class PageGenerator {
     constructor() {
         this.templatePath = '../Pages/subject-template.html';
-        this.outputDir = '../Pages/subjects/';
+        this.outputDir = '../Pages/generated/';
         this.dataPath = './data/available_subjects.json';
     }
 

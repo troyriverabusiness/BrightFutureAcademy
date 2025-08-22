@@ -10,3 +10,5 @@ icons/
 .DS_Store
 icons/
 images/
+
+generated/
