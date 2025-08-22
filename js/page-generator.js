@@ -1,0 +1,248 @@
+/**
+ * Page Generator Utility
+ * This script can be used to generate individual subject pages from the template
+ * Run this in Node.js environment to generate static HTML pages
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+class PageGenerator {
+    constructor() {
+        this.templatePath = '../Pages/subject-template.html';
+        this.outputDir = '../Pages/generated/';
+        this.dataPath = '../js/master-subject-data.json';
+    }
+
+    async generateAllPages() {
+        try {
+            // Load the master subject data
+            const subjectData = await this.loadSubjectData();
+            
+            // Create output directory if it doesn't exist
+            if (!fs.existsSync(this.outputDir)) {
+                fs.mkdirSync(this.outputDir, { recursive: true });
+            }
+
+            // Generate a page for each subject
+            for (const subject of subjectData.subjects) {
+                await this.generateSubjectPage(subject);
+            }
+
+            console.log(`Generated ${subjectData.subjects.length} subject pages`);
+        } catch (error) {
+            console.error('Error generating pages:', error);
+        }
+    }
+
+    async loadSubjectData() {
+        try {
+            const data = fs.readFileSync(this.dataPath, 'utf8');
+            return JSON.parse(data);
+        } catch (error) {
+            console.error('Error loading subject data:', error);
+            throw error;
+        }
+    }
+
+    async generateSubjectPage(subject) {
+        try {
+            // Load the template
+            const template = fs.readFileSync(this.templatePath, 'utf8');
+            
+            // Generate the HTML content
+            const htmlContent = this.populateTemplate(template, subject);
+            
+            // Create filename
+            const filename = `${subject.id}.html`;
+            const outputPath = path.join(this.outputDir, filename);
+            
+            // Write the file
+            fs.writeFileSync(outputPath, htmlContent);
+            
+            console.log(`Generated: ${filename}`);
+        } catch (error) {
+            console.error(`Error generating page for ${subject.id}:`, error);
+        }
+    }
+
+    populateTemplate(template, subject) {
+        let html = template;
+
+        // Replace all placeholders
+        const replacements = {
+            '{{SUBJECT_NAME}}': subject.name,
+            '{{SUBJECT_CATEGORY}}': subject.category,
+            '{{SUBJECT_DESCRIPTION_SHORT}}': subject.description.substring(0, 100) + '...',
+            '{{SUBJECT_DESCRIPTION}}': subject.description,
+            '{{SUBJECT_ID}}': subject.id,
+            '{{CATEGORY_NAME}}': subject.category,
+            '{{CATEGORY_LINK}}': this.getCategoryLink(subject.category),
+            '{{GDC_REQUIREMENT}}': subject.requirements.gdc,
+            '{{CLASS_STRUCTURE_PLAN}}': subject.classStructure.plan,
+            '{{ADDITIONAL_INFO}}': 'Classes are designed to support your school curriculum',
+            '{{PRICE}}': subject.pricing.price,
+            '{{GRADE}}': subject.grade,
+            '{{FORMAT}}': subject.schedule.format,
+            '{{CONTACT_EMAIL}}': subject.contact.email,
+            '{{CONTACT_PHONE}}': subject.contact.phone,
+            '{{CONTACT_LOCATION}}': subject.contact.location,
+            '{{SPECIAL_FEATURES_FLEXIBILITY}}': subject.specialFeatures.flexibility,
+            '{{LEARNING_OBJECTIVES_DESCRIPTION}}': subject.learningObjectives.description,
+            '{{LEARNING_OBJECTIVES_LIST}}': this.generateLearningObjectivesHTML(subject),
+            '{{CURRICULUM_HEADERS}}': this.generateCurriculumHeadersHTML(subject),
+            '{{CURRICULUM_TOPICS}}': this.generateCurriculumTopicsHTML(subject),
+            '{{SCHEDULE_DESCRIPTION}}': this.generateScheduleDescriptionHTML(subject)
+        };
+
+        // Replace all placeholders
+        Object.entries(replacements).forEach(([placeholder, value]) => {
+            html = html.replace(new RegExp(placeholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), value);
+        });
+
+        return html;
+    }
+
+    getCategoryLink(category) {
+        const categoryMap = {
+            'Mathematics': 'maths',
+            'Physics': 'physics',
+            'Chemistry': 'chemistry',
+            'Economics': 'economics',
+            'Business': 'business'
+        };
+        return categoryMap[category] || category.toLowerCase();
+    }
+
+    generateLearningObjectivesHTML(subject) {
+        let html = '';
+        subject.learningObjectives.objectives.forEach(objective => {
+            html += `
+            <tr>
+               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td>${objective}</td>
+            </tr>`;
+        });
+        return html;
+    }
+
+    generateCurriculumHeadersHTML(subject) {
+        if (subject.level === 'HL') {
+            return `<td>${subject.name}</td><td>${subject.name.replace(' HL', ' SL')}</td>`;
+        } else {
+            return `<td>${subject.name}</td><td>${subject.name.replace(' SL', ' HL')}</td>`;
+        }
+    }
+
+    generateCurriculumTopicsHTML(subject) {
+        let html = '';
+        subject.curriculum.topics.forEach(topic => {
+            html += `
+            <tr>
+               <td class="topic">Topic ${topic.topicNumber}: ${topic.topicName}</td>`;
+            
+            // HL content cell
+            if (topic.hlContent && subject.level === 'HL') {
+                html += `<td>`;
+                topic.hlContent.forEach(item => {
+                    html += `<p class="${item.difficulty}">${item.content}</p>`;
+                });
+                html += `</td>`;
+            } else {
+                html += `<td></td>`;
+            }
+            
+            // SL content cell
+            html += `<td>`;
+            if (topic.slContent) {
+                topic.slContent.forEach(item => {
+                    html += `<p class="${item.difficulty}">${item.content}</p>`;
+                });
+            }
+            html += `</td>
+            </tr>`;
+        });
+        return html;
+    }
+
+    generateScheduleDescriptionHTML(subject) {
+        const schedule = subject.schedule;
+        return `The classes for ${subject.name}, for ${subject.grade}, will be held ${schedule.format.toLowerCase()} at the academy, every <span>${schedule.day} ${schedule.time}</span>.`;
+    }
+
+    // Generate a simple index page listing all subjects
+    async generateIndexPage() {
+        try {
+            const subjectData = await this.loadSubjectData();
+            
+            let html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generated Subject Pages | Bright Future Academy</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .subject-link { display: block; margin: 10px 0; padding: 10px; background: #f5f5f5; text-decoration: none; color: #333; }
+        .subject-link:hover { background: #e0e0e0; }
+        .category { margin: 20px 0; }
+        .category h2 { color: #4A90E2; }
+    </style>
+</head>
+<body>
+    <h1>Generated Subject Pages</h1>
+    <p>All subject pages have been generated from the master data. Click on any subject to view the generated page:</p>`;
+
+            // Group subjects by category
+            const categories = {};
+            subjectData.subjects.forEach(subject => {
+                if (!categories[subject.category]) {
+                    categories[subject.category] = [];
+                }
+                categories[subject.category].push(subject);
+            });
+
+            // Generate category sections
+            Object.entries(categories).forEach(([category, subjects]) => {
+                html += `
+    <div class="category">
+        <h2>${category}</h2>`;
+                
+                subjects.forEach(subject => {
+                    html += `
+        <a href="${subject.id}.html" class="subject-link">
+            <strong>${subject.name}</strong> (${subject.level}) - ${subject.grade}
+            <br><small>${subject.description.substring(0, 100)}...</small>
+        </a>`;
+                });
+                
+                html += `
+    </div>`;
+            });
+
+            html += `
+</body>
+</html>`;
+
+            const outputPath = path.join(this.outputDir, 'index.html');
+            fs.writeFileSync(outputPath, html);
+            console.log('Generated index page');
+        } catch (error) {
+            console.error('Error generating index page:', error);
+        }
+    }
+}
+
+// If running directly, generate all pages
+if (require.main === module) {
+    const generator = new PageGenerator();
+    generator.generateAllPages().then(() => {
+        return generator.generateIndexPage();
+    }).then(() => {
+        console.log('Page generation complete!');
+    }).catch(error => {
+        console.error('Page generation failed:', error);
+    });
+}
+
+module.exports = PageGenerator;

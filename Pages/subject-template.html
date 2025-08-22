@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>{{SUBJECT_NAME}} | Bright Future Academy</title>
+   <link rel="shortcut icon" type="x-icon" href="../icons/logo_small.png">
+   <link rel="stylesheet" href="../css/global.css">
+   <link rel="stylesheet" href="../css/class.css">
+</head>
+<body>
+<script src="../js/nav.js" defer></script>
+<script src="../js/subject-generator.js" defer></script>
+
+<header class="header">
+   <nav>
+      <div id="left">
+         <a id="logo-link" href="index.html">
+            <img id="logo" src="https://media.licdn.com/dms/image/D4D3DAQGejYrVFvFwWA/image-scale_191_1128/0/1719933016095/brightfuturespain_cover?e=2147483647&v=beta&t=IKKIX0B5dCWML9JAyDXwll54sY9-Q3yNU8DlYKT09_o" alt="logo">
+         </a>
+      </div>
+      <div id="right">
+         <a href="AboutUsPage.html">About Us</a>
+         <a href="SubjectsPage.html">Classes</a>
+         <a href="ContactPage.html">Contact</a>
+         <a class="CTA" href="GridViewSubjects.html">
+            <button id="CTA-button">
+               <img id="list_icon" src="../icons/list_icon.svg" alt="icon">
+               All Subjects
+            </button>
+         </a>
+      </div>
+   </nav>
+</header>
+
+<main>
+   <section class="page-header">
+      <div class="page-header-text">
+         <h2>{{SUBJECT_CATEGORY}} Section</h2>
+         <p>{{SUBJECT_DESCRIPTION_SHORT}}</p>
+      </div>
+   </section>
+
+   <section class="e-commerce">
+      <div class="class-container">
+         <div class="links">
+            <a href="GridViewSubjects.html">Subjects</a>
+            <img class="arrow" src="../icons/right_arrow.svg" alt="">
+            <a href="GridViewSubjects.html#{{CATEGORY_LINK}}">{{CATEGORY_NAME}}</a>
+            <img class="arrow" src="../icons/right_arrow.svg" alt="">
+            <b id="current-page">{{SUBJECT_NAME}}</b>
+         </div>
+
+         <div class="main">
+            <div class="info">
+               <h3>{{SUBJECT_NAME}}</h3>
+               <p>{{SUBJECT_DESCRIPTION}}</p>
+
+               <p><span style="font-weight: bold;">GDC</span> {{GDC_REQUIREMENT}}</p>
+               <p>{{CLASS_STRUCTURE_PLAN}}</p>
+
+               <div class="details-box">
+                  <div class="quick-links">
+                     <a class="quicklink" id="first" href="#details">Details</a>
+                     <a class="quicklink" href="#curriculum">Curriculum</a>
+                     <a class="quicklink" href="#date">Date</a>
+                  </div>
+
+                  <p>{{ADDITIONAL_INFO}}</p>
+               </div>
+
+            </div>
+
+            <div class="checkout">
+               <span id="price">{{PRICE}}<span>/mo</span></span>
+
+               <div class="badges">
+                  <p class="badge">{{GRADE}}</p>
+                  <p class="badge">{{FORMAT}}</p>
+               </div>
+               <form action="">
+                  <div class="form">
+                     <p>Check Availability</p>
+                     <label>
+                        <input type="text" placeholder="Name*">
+                     </label>
+                     <label>
+                        <input type="text" placeholder="Email*">
+                     </label>
+                     <label>
+                        <input type="text" placeholder="Phone">
+                     </label>
+                     <p style="font-size: 14px;">* = required</p>
+                  </div>
+                  <a href="mailto:{{CONTACT_EMAIL}}?subject={{SUBJECT_NAME}}%20Inquiry&body=Hi,%20I'm%20interested%20in%20{{SUBJECT_NAME}}%20classes."><button class="submit" >Submit</button></a>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="interlude-header">
+      <div class="interlude-container">
+         <h3 id="interlude-container-left">Free Introductory Session</h3>
+         <p id="interlude-container-right">{{SPECIAL_FEATURES_FLEXIBILITY}}</p>
+      </div>
+   </section>
+
+   <section id="curriculum">
+      <div class="learning-objectives">
+         <h3>Learning Objectives</h3>
+         <p>{{LEARNING_OBJECTIVES_DESCRIPTION}}</p>
+         <table>
+            {{LEARNING_OBJECTIVES_LIST}}
+         </table>
+      </div>
+      <div class="curriculum">
+         <h4>Topics covered</h4>
+         <table id="topics">
+            <tr class="class-title">
+               <td class="topic"></td>
+               {{CURRICULUM_HEADERS}}
+            </tr>
+            {{CURRICULUM_TOPICS}}
+         </table>
+      </div>
+   </section>
+
+   <section id="date">
+      <div class="header-text">
+         <h3>When?</h3>
+         <p>{{SCHEDULE_DESCRIPTION}}</p>
+      </div>
+      <img id="calendar" src="../images/calendar.webp" alt="calendars">
+   </section>
+
+   <section class="testimonials"></section>
+
+   <section class="footer">
+      <div class="top-footer">
+         <div class="footer-left">
+            <div class="footer-content">
+               <img id="footer-logo" src="../icons/logo.png" alt="">
+               <div class="text">
+                  <p><span class="gradient">Bright Future Academy</span> in {{CONTACT_LOCATION}}. Providing excellent tutoring since 2023.</p>
+                  <p class="bold">Contact:</p>
+                  <p class="underline">{{CONTACT_PHONE}}</p>
+                  <p class="underline">{{CONTACT_EMAIL}}</p>
+               </div>
+               <div class="icons-container">
+                  <a href="https://www.instagram.com/brightfuture.es/"><img class="footer-icon" src="../icons/instagram.png" alt=""></a>
+                  <a href="https://www.linkedin.com/company/brightfuturespain/"><img class="footer-icon" src="../icons/linkedin.png" alt=""></a>
+                  <a href="mailto:{{CONTACT_EMAIL}}"><img class="footer-icon" src="../icons/mail_icon.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer-right">
+            <div class="footer-content">
+               <h4>Popular Links</h4>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="ContactPage.html">Contact</a></li>
+                  <li><a href="FAQsPage.html">FAQs</a></li>
+                  <li><a href="TestimonialsPage.html">Testimonials</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-content">
+               <h4>Subjects</h4>
+               <ul>
+                  <li><a href="GridViewSubjects.html#maths">Math</a></li>
+                  <li><a href="GridViewSubjects.html#physics">Physics</a></li>
+                  <li><a href="GridViewSubjects.html#chemistry">Chemistry</a></li>
+                  <li><a href="GridViewSubjects.html#economics">Economics</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="bottom-footer">
+         <div class="footer-misc">
+            <p class="left-foot">© Bright Future Academy 2024</p>
+            <div class="right-foot">
+               <a href="#">Privacy Policy</a>
+               <a href="#">Cookie Settings</a>
+               <a href="#">Terms of Service</a>
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
+
+<!-- Hidden data container for JavaScript -->
+<div id="subject-data" style="display: none;" data-subject-id="{{SUBJECT_ID}}"></div>
+
+</body>
+</html>
