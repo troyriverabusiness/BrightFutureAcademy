@@ -1,0 +1,1038 @@
+{
+  "subjects": [
+    {
+      "id": "math-ai-hl",
+      "name": "Math Application and Interpretation HL",
+      "shortName": "Math AI HL",
+      "category": "Mathematics",
+      "level": "HL",
+      "grade": "Grade 11",
+      "description": "The class tackles all HL and SL topics of the Math AI curriculum. At HL, the SL subjects are taught and finished in the first year (Grade 11), and the HL subjects are explored in the second year (Grade 12). This math subject is less abstract and has more practical topics in comparison to Math AA. Potential fields where this math is useful are: Finance, Economics, Computer Science, and more.",
+      "schedule": {
+        "format": "In-person",
+        "day": "Tuesday",
+        "time": "7:15pm to 9:15pm"
+      },
+      "learningObjectives": [
+          "Understand mathematical language",
+          "Be able to identify similar problems",
+          "Solve complex questions by roadmapping a solution",
+          "Understand and perform mathematical proofs"
+        ],
+      "curriculum": {
+        "topics": [
+          {
+            "topicNumber": 1,
+            "topicName": "Number & Algebra",
+            "hlContent": [
+              {
+                "content": "Complex and Matrix",
+                "difficulty": "red"
+              },
+              {
+                "content": "Adding sinusoidal functions",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Eigenvalues and Eigenvectors",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Sequences and Series",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Arithmetic",
+                "difficulty": "red"
+              },
+              {
+                "content": "Geometric",
+                "difficulty": "red"
+              },
+              {
+                "content": "Finance",
+                "difficulty": "green"
+              },
+              {
+                "content": "Scientific Notation",
+                "difficulty": "yellow"
+              }
+            ]
+          },
+          {
+            "topicNumber": 2,
+            "topicName": "Functions",
+            "hlContent": [
+              {
+                "content": "Composite functions",
+                "difficulty": "green"
+              },
+              {
+                "content": "Inverse functions",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Transformation",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Logistic functions",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Polynomials",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Linearization",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Linear",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Quadratic",
+                "difficulty": "green"
+              },
+              {
+                "content": "Domain and Range",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Exponents and Logarithms",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 3,
+            "topicName": "Geometry & Trigonometry",
+            "hlContent": [
+              {
+                "content": "Advanced trigonometric functions",
+                "difficulty": "red"
+              },
+              {
+                "content": "Advanced trigonometric equations",
+                "difficulty": "red"
+              },
+              {
+                "content": "Vectors",
+                "difficulty": "green"
+              },
+              {
+                "content": "Graph Theory",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Bearings",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Navigation",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Sine and Cosine rule",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Modelling functions",
+                "difficulty": "green"
+              }
+            ]
+          },
+          {
+            "topicNumber": 4,
+            "topicName": "Probability & Statistics",
+            "hlContent": [
+              {
+                "content": "Poisson Distribution",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Central limit theory",
+                "difficulty": "red"
+              },
+              {
+                "content": "Advanced Hypothesis Testing",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Confidence Intervals",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Type 1 & 2 Errors",
+                "difficulty": "red"
+              },
+              {
+                "content": "Critical Region",
+                "difficulty": "green"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Hypothesis Testing",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Spearman's rank",
+                "difficulty": "green"
+              },
+              {
+                "content": "Probability",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Regression",
+                "difficulty": "red"
+              },
+              {
+                "content": "Statistics",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Normal Distribution",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Binomial Distribution",
+                "difficulty": "purple"
+              }
+            ]
+          },
+          {
+            "topicNumber": 5,
+            "topicName": "Calculus",
+            "hlContent": [
+              {
+                "content": "Advanced Differentiation",
+                "difficulty": "red"
+              },
+              {
+                "content": "Advanced Integration",
+                "difficulty": "red"
+              },
+              {
+                "content": "Concavity",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Related Rates",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Kinematics",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Areas & Volumes of revolution",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Slope Fields",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Derivatives",
+                "difficulty": "green"
+              },
+              {
+                "content": "Tangent and Normal",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Optimization",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Trapezium Rule",
+                "difficulty": "red"
+              },
+              {
+                "content": "Integrals",
+                "difficulty": "green"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "physics-hl",
+      "name": "Physics HL",
+      "shortName": "Physics HL",
+      "category": "Physics",
+      "level": "HL",
+      "grade": "Grade 11",
+      "description": "Higher Level Physics explores the fundamental principles of the physical world in depth. Students develop strong analytical skills and learn to apply mathematical concepts to understand complex physical phenomena. Ideal for students pursuing physics, engineering, or related fields.",
+      "schedule": {
+        "format": "In-person",
+        "day": "Wednesday",
+        "time": "7:15pm to 9:15pm"
+      },
+      "learningObjectives": [
+        "Understand fundamental physics principles",
+        "Apply mathematical concepts to physics problems",
+        "Develop analytical and problem-solving skills",
+        "Master laboratory techniques and data analysis"
+      ],
+      "curriculum": {
+        "topics": [
+          {
+            "topicNumber": 1,
+            "topicName": "Mechanics",
+            "hlContent": [
+              {
+                "content": "Advanced kinematics and dynamics",
+                "difficulty": "red"
+              },
+              {
+                "content": "Circular motion and gravitation",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Energy and momentum conservation",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Basic motion and forces",
+                "difficulty": "green"
+              },
+              {
+                "content": "Newton's laws of motion",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Work and energy",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Simple harmonic motion",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 2,
+            "topicName": "Thermal Physics",
+            "hlContent": [
+              {
+                "content": "Thermodynamic processes",
+                "difficulty": "red"
+              },
+              {
+                "content": "Entropy and free energy",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Statistical mechanics",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Temperature and heat",
+                "difficulty": "green"
+              },
+              {
+                "content": "Thermal expansion",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Gas laws",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Heat transfer",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 3,
+            "topicName": "Waves",
+            "hlContent": [
+              {
+                "content": "Wave phenomena and interference",
+                "difficulty": "red"
+              },
+              {
+                "content": "Standing waves and resonance",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Doppler effect",
+                "difficulty": "yellow"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Wave properties",
+                "difficulty": "green"
+              },
+              {
+                "content": "Sound waves",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Light waves",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Reflection and refraction",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 4,
+            "topicName": "Electricity & Magnetism",
+            "hlContent": [
+              {
+                "content": "Advanced circuit analysis",
+                "difficulty": "red"
+              },
+              {
+                "content": "Electromagnetic induction",
+                "difficulty": "purple"
+              },
+              {
+                "content": "AC circuits and phasors",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Electric fields and potential",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Current and resistance",
+                "difficulty": "green"
+              },
+              {
+                "content": "Magnetic fields",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Electromagnetic waves",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 5,
+            "topicName": "Modern Physics",
+            "hlContent": [
+              {
+                "content": "Quantum mechanics",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Nuclear physics",
+                "difficulty": "red"
+              },
+              {
+                "content": "Particle physics",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Photoelectric effect",
+                "difficulty": "red"
+              },
+              {
+                "content": "Wave-particle duality",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Radioactivity",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Nuclear reactions",
+                "difficulty": "red"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "chemistry-hl",
+      "name": "Chemistry HL",
+      "shortName": "Chemistry HL",
+      "category": "Chemistry",
+      "level": "HL",
+      "grade": "Grade 11",
+      "description": "Higher Level Chemistry delves deep into chemical principles and laboratory techniques. Students develop advanced analytical skills and gain hands-on experience with complex chemical processes. Perfect for students interested in chemistry, medicine, or chemical engineering.",
+      "schedule": {
+        "format": "In-person",
+        "day": "Thursday",
+        "time": "7:15pm to 9:15pm"
+      },
+      "learningObjectives": [
+        "Master fundamental chemical concepts",
+        "Develop laboratory skills and safety practices",
+        "Understand chemical bonding and reactions",
+        "Apply mathematical concepts to chemistry problems"
+      ],
+      "curriculum": {
+        "topics": [
+          {
+            "topicNumber": 1,
+            "topicName": "Stoichiometry & Atomic Structure",
+            "hlContent": [
+              {
+                "content": "Advanced stoichiometry calculations",
+                "difficulty": "red"
+              },
+              {
+                "content": "Quantum mechanical model",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Electron configurations",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Basic stoichiometry",
+                "difficulty": "green"
+              },
+              {
+                "content": "Atomic structure",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Isotopes and atomic mass",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Mole concept",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 2,
+            "topicName": "Chemical Bonding",
+            "hlContent": [
+              {
+                "content": "Advanced molecular orbital theory",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Hybridization and resonance",
+                "difficulty": "red"
+              },
+              {
+                "content": "Intermolecular forces",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Ionic bonding",
+                "difficulty": "green"
+              },
+              {
+                "content": "Covalent bonding",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Lewis structures",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "VSEPR theory",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 3,
+            "topicName": "Energetics & Kinetics",
+            "hlContent": [
+              {
+                "content": "Advanced thermodynamics",
+                "difficulty": "red"
+              },
+              {
+                "content": "Reaction mechanisms",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Catalysis and enzymes",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Enthalpy changes",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Reaction rates",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Activation energy",
+                "difficulty": "red"
+              },
+              {
+                "content": "Collision theory",
+                "difficulty": "green"
+              }
+            ]
+          },
+          {
+            "topicNumber": 4,
+            "topicName": "Equilibrium & Acids",
+            "hlContent": [
+              {
+                "content": "Advanced equilibrium calculations",
+                "difficulty": "red"
+              },
+              {
+                "content": "Buffer solutions",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Titration curves",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Chemical equilibrium",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Acid-base theory",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "pH calculations",
+                "difficulty": "red"
+              },
+              {
+                "content": "Indicators",
+                "difficulty": "green"
+              }
+            ]
+          },
+          {
+            "topicNumber": 5,
+            "topicName": "Organic Chemistry",
+            "hlContent": [
+              {
+                "content": "Advanced reaction mechanisms",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Stereochemistry",
+                "difficulty": "red"
+              },
+              {
+                "content": "Synthesis strategies",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Hydrocarbons",
+                "difficulty": "green"
+              },
+              {
+                "content": "Functional groups",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Basic reactions",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Nomenclature",
+                "difficulty": "red"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "economics-hl",
+      "name": "Economics HL",
+      "shortName": "Economics HL",
+      "category": "Economics",
+      "level": "HL",
+      "grade": "Grade 11",
+      "description": "Higher Level Economics provides an in-depth study of economic theory and real-world applications. Students analyze complex economic scenarios and develop strong analytical and critical thinking skills. Ideal for students interested in business, economics, or social sciences.",
+      "schedule": {
+        "format": "In-person",
+        "day": "Friday",
+        "time": "7:15pm to 9:15pm"
+      },
+      "learningObjectives": [
+        "Understand fundamental economic principles",
+        "Analyze market structures and behavior",
+        "Evaluate economic policies and their impacts",
+        "Develop critical thinking and analytical skills"
+      ],
+      "curriculum": {
+        "topics": [
+          {
+            "topicNumber": 1,
+            "topicName": "Microeconomics",
+            "hlContent": [
+              {
+                "content": "Advanced market structures",
+                "difficulty": "red"
+              },
+              {
+                "content": "Game theory applications",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Market failure analysis",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Supply and demand",
+                "difficulty": "green"
+              },
+              {
+                "content": "Market equilibrium",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Elasticity concepts",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Consumer behavior",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 2,
+            "topicName": "Macroeconomics",
+            "hlContent": [
+              {
+                "content": "Advanced fiscal policy",
+                "difficulty": "red"
+              },
+              {
+                "content": "Monetary policy analysis",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Economic growth models",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "GDP and national income",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Inflation and unemployment",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Aggregate demand and supply",
+                "difficulty": "red"
+              },
+              {
+                "content": "Economic indicators",
+                "difficulty": "green"
+              }
+            ]
+          },
+          {
+            "topicNumber": 3,
+            "topicName": "International Economics",
+            "hlContent": [
+              {
+                "content": "Advanced trade theory",
+                "difficulty": "red"
+              },
+              {
+                "content": "Exchange rate systems",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Balance of payments",
+                "difficulty": "blue"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Comparative advantage",
+                "difficulty": "green"
+              },
+              {
+                "content": "Trade barriers",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Exchange rates",
+                "difficulty": "red"
+              },
+              {
+                "content": "Globalization",
+                "difficulty": "blue"
+              }
+            ]
+          },
+          {
+            "topicNumber": 4,
+            "topicName": "Development Economics",
+            "hlContent": [
+              {
+                "content": "Development strategies",
+                "difficulty": "red"
+              },
+              {
+                "content": "Sustainable development",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Economic inequality analysis",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Development indicators",
+                "difficulty": "green"
+              },
+              {
+                "content": "Poverty and inequality",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Foreign aid",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Economic growth factors",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 5,
+            "topicName": "Behavioral Economics",
+            "hlContent": [
+              {
+                "content": "Advanced behavioral models",
+                "difficulty": "purple"
+              },
+              {
+                "content": "Experimental economics",
+                "difficulty": "red"
+              },
+              {
+                "content": "Neuroeconomics",
+                "difficulty": "purple"
+              }
+            ],
+            "slContent": [
+              {
+                "content": "Bounded rationality",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Heuristics and biases",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Prospect theory",
+                "difficulty": "red"
+              },
+              {
+                "content": "Social preferences",
+                "difficulty": "green"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "math-ai-sl",
+      "name": "Math Application and Interpretation SL",
+      "shortName": "Math AI SL",
+      "category": "Mathematics",
+      "level": "SL",
+      "grade": "Grade 11",
+      "description": "Standard Level Math AI focuses on practical applications of mathematics. Students learn mathematical concepts through real-world problems and applications, making it ideal for students interested in business, social sciences, or other fields where practical math skills are valuable.",
+      "schedule": {
+        "format": "In-person",
+        "day": "Wednesday",
+        "time": "7:15pm to 9:15pm"
+      },
+      "learningObjectives": [
+          "Understand mathematical language",
+          "Apply mathematical concepts to real-world problems",
+          "Develop practical problem-solving skills",
+          "Build foundation for business and social sciences"
+        ],
+      "curriculum": {
+        "topics": [
+          {
+            "topicNumber": 1,
+            "topicName": "Number & Algebra",
+            "slContent": [
+              {
+                "content": "Sequences and Series",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Arithmetic",
+                "difficulty": "red"
+              },
+              {
+                "content": "Geometric",
+                "difficulty": "red"
+              },
+              {
+                "content": "Finance",
+                "difficulty": "green"
+              },
+              {
+                "content": "Scientific Notation",
+                "difficulty": "yellow"
+              }
+            ]
+          },
+          {
+            "topicNumber": 2,
+            "topicName": "Functions",
+            "slContent": [
+              {
+                "content": "Linear",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Quadratic",
+                "difficulty": "green"
+              },
+              {
+                "content": "Domain and Range",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Exponents and Logarithms",
+                "difficulty": "red"
+              }
+            ]
+          },
+          {
+            "topicNumber": 3,
+            "topicName": "Geometry & Trigonometry",
+            "slContent": [
+              {
+                "content": "Bearings",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Navigation",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Sine and Cosine rule",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Modelling functions",
+                "difficulty": "green"
+              }
+            ]
+          },
+          {
+            "topicNumber": 4,
+            "topicName": "Probability & Statistics",
+            "slContent": [
+              {
+                "content": "Hypothesis Testing",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Spearman's rank",
+                "difficulty": "green"
+              },
+              {
+                "content": "Probability",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Regression",
+                "difficulty": "red"
+              },
+              {
+                "content": "Statistics",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Normal Distribution",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Binomial Distribution",
+                "difficulty": "purple"
+              }
+            ]
+          },
+          {
+            "topicNumber": 5,
+            "topicName": "Calculus",
+            "slContent": [
+              {
+                "content": "Derivatives",
+                "difficulty": "green"
+              },
+              {
+                "content": "Tangent and Normal",
+                "difficulty": "blue"
+              },
+              {
+                "content": "Optimization",
+                "difficulty": "yellow"
+              },
+              {
+                "content": "Trapezium Rule",
+                "difficulty": "red"
+              },
+              {
+                "content": "Integrals",
+                "difficulty": "green"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

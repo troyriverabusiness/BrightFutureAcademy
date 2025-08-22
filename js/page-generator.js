@@ -11,7 +11,7 @@ class PageGenerator {
     constructor() {
         this.templatePath = '../Pages/subject-template.html';
         this.outputDir = '../Pages/generated/';
-        this.dataPath = '../js/master-subject-data.json';
+        this.dataPath = './master-subject-data.json';
     }
 
     async generateAllPages() {
@@ -78,17 +78,17 @@ class PageGenerator {
             '{{SUBJECT_ID}}': subject.id,
             '{{CATEGORY_NAME}}': subject.category,
             '{{CATEGORY_LINK}}': this.getCategoryLink(subject.category),
-            '{{GDC_REQUIREMENT}}': subject.requirements.gdc,
-            '{{CLASS_STRUCTURE_PLAN}}': subject.classStructure.plan,
+            '{{GDC_REQUIREMENT}}': 'GDC (Graphical Display Calculator) is required for all the sessions',
+            '{{CLASS_STRUCTURE_PLAN}}': 'Classes follow a flexible plan, ensuring the topics covered at BFA support the topics taught at their school',
             '{{ADDITIONAL_INFO}}': 'Classes are designed to support your school curriculum',
-            '{{PRICE}}': subject.pricing.price,
+            '{{PRICE}}': '280€',
             '{{GRADE}}': subject.grade,
             '{{FORMAT}}': subject.schedule.format,
-            '{{CONTACT_EMAIL}}': subject.contact.email,
-            '{{CONTACT_PHONE}}': subject.contact.phone,
-            '{{CONTACT_LOCATION}}': subject.contact.location,
-            '{{SPECIAL_FEATURES_FLEXIBILITY}}': subject.specialFeatures.flexibility,
-            '{{LEARNING_OBJECTIVES_DESCRIPTION}}': subject.learningObjectives.description,
+            '{{CONTACT_EMAIL}}': 'rawad@brightfuture.es',
+            '{{CONTACT_PHONE}}': '+34 632 220 679',
+            '{{CONTACT_LOCATION}}': 'Alcobendas, Madrid',
+            '{{SPECIAL_FEATURES_FLEXIBILITY}}': 'Looking for a flexible and convenient class schedule? At Bright Future Academy, we offer a variety of classes on different days and times to accommodate our students\' busy schedules. Whether you\'re looking for after-school classes or weekend sessions, we have options for you. Join us and unlock your full potential today!',
+            '{{LEARNING_OBJECTIVES_DESCRIPTION}}': 'Students will develop comprehensive understanding and skills in this subject area.',
             '{{LEARNING_OBJECTIVES_LIST}}': this.generateLearningObjectivesHTML(subject),
             '{{CURRICULUM_HEADERS}}': this.generateCurriculumHeadersHTML(subject),
             '{{CURRICULUM_TOPICS}}': this.generateCurriculumTopicsHTML(subject),
@@ -99,6 +99,10 @@ class PageGenerator {
         Object.entries(replacements).forEach(([placeholder, value]) => {
             html = html.replace(new RegExp(placeholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), value);
         });
+
+        // Fix relative paths for generated pages (they're in Pages/generated/ so need to go up 2 levels)
+        html = html.replace(/href="\.\.\//g, 'href="../../');
+        html = html.replace(/src="\.\.\//g, 'src="../../');
 
         return html;
     }
@@ -116,7 +120,7 @@ class PageGenerator {
 
     generateLearningObjectivesHTML(subject) {
         let html = '';
-        subject.learningObjectives.objectives.forEach(objective => {
+        subject.learningObjectives.forEach(objective => {
             html += `
             <tr>
                <td><img class="icon" src="../icons/tick.png" alt=""></td>
