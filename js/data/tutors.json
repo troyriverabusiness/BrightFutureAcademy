@@ -1,0 +1,22 @@
+{
+    "tutors": [
+        {
+            "name": "Rawad Sabra",
+            "role": "CEO and Math/Physics Tutor",
+            "description": "Experienced private tutor & Aerospace Engineer.",
+            "linkedin": "https://www.linkedin.com/in/rawad-sabra-0000000000/"
+        },
+        { 
+            "name": "Troy Rivera",
+            "role": "Head of IT",
+            "description": "Computer scientist in charge of IT at Bright Future Academy",
+            "linkedin": "https://www.linkedin.com/in/troyriveravolkogon"
+        },
+        {
+            "name": "Karim Hany",
+            "role": "Chemistry Tutor",
+            "description": "Pharmacologist & Dedicated IB Chemistry tutor",
+            "linkedin": "#"
+        }
+    ]
+}
