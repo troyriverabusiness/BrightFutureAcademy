@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
    window.addEventListener('load', ()=> {
       if (window.scrollY === 0) {
-         mask_bg.style.background = '#141414';
          navbar.classList.add('mask');
       }
    });
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY !== 0) {
-         mask_bg.style.background = 'white';
+         // mask_bg.style.background = 'white';
       }
 
       if (currentScrollY < window.innerHeight) {
