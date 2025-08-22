@@ -173,76 +173,12 @@ class PageGenerator {
         const schedule = subject.schedule;
         return `The classes for ${subject.name}, for ${subject.grade}, will be held ${schedule.format.toLowerCase()} at the academy, every <span>${schedule.day} ${schedule.time}</span>.`;
     }
-
-    // Generate a simple index page listing all subjects
-    async generateIndexPage() {
-        try {
-            const subjectData = await this.loadSubjectData();
-            
-            let html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Generated Subject Pages | Bright Future Academy</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        .subject-link { display: block; margin: 10px 0; padding: 10px; background: #f5f5f5; text-decoration: none; color: #333; }
-        .subject-link:hover { background: #e0e0e0; }
-        .category { margin: 20px 0; }
-        .category h2 { color: #4A90E2; }
-    </style>
-</head>
-<body>
-    <h1>Generated Subject Pages</h1>
-    <p>All subject pages have been generated from the master data. Click on any subject to view the generated page:</p>`;
-
-            // Group subjects by category
-            const categories = {};
-            subjectData.subjects.forEach(subject => {
-                if (!categories[subject.category]) {
-                    categories[subject.category] = [];
-                }
-                categories[subject.category].push(subject);
-            });
-
-            // Generate category sections
-            Object.entries(categories).forEach(([category, subjects]) => {
-                html += `
-    <div class="category">
-        <h2>${category}</h2>`;
-                
-                subjects.forEach(subject => {
-                    html += `
-        <a href="${subject.id}.html" class="subject-link">
-            <strong>${subject.name}</strong> (${subject.level}) - ${subject.grade}
-            <br><small>${subject.description.substring(0, 100)}...</small>
-        </a>`;
-                });
-                
-                html += `
-    </div>`;
-            });
-
-            html += `
-</body>
-</html>`;
-
-            const outputPath = path.join(this.outputDir, 'index.html');
-            fs.writeFileSync(outputPath, html);
-            console.log('Generated index page');
-        } catch (error) {
-            console.error('Error generating index page:', error);
-        }
-    }
 }
 
 // If running directly, generate all pages
 if (require.main === module) {
     const generator = new PageGenerator();
     generator.generateAllPages().then(() => {
-        return generator.generateIndexPage();
-    }).then(() => {
         console.log('Page generation complete!');
     }).catch(error => {
         console.error('Page generation failed:', error);
