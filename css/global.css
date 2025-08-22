@@ -22,6 +22,8 @@
    --misc_1: #DCF0FF;
    --misc_2: #DFFBF4;
    --misc_3: #E2FAFA;
+   
+   --gradient: linear-gradient(45deg, var(--fill), #17A3A3);
 }
 
 
