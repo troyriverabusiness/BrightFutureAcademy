@@ -238,7 +238,7 @@ class SubjectPageGenerator {
             const iconCell = document.createElement('td');
             const icon = document.createElement('img');
             icon.className = 'icon';
-            icon.src = '../icons/tick.png';
+            icon.src = '../../icons/tick.png';
             icon.alt = '';
             iconCell.appendChild(icon);
             

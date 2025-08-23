@@ -100,11 +100,11 @@ class PageGenerator {
             html = html.replace(new RegExp(placeholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), value);
         });
 
-        // Fix paths for generated pages (they're in Pages/generated/)
-        // Assets (CSS, JS, images, icons) need to go up 2 levels to root
+        // Fix paths due to the generated pages being in different directory
         html = html.replace(/href="\.\.\//g, 'href="../../');
         html = html.replace(/src="\.\.\//g, 'src="../../');
-        
+        // Fix the tick icon paths specifically to be correct
+        html = html.replace(/src="\.\.\.\.\.\.\/icons\/tick\.png"/g, 'src="../../icons/tick.png"');
         // Navigation links need to go up 1 level to Pages directory
         html = html.replace(/href="([^"]*\.html)"/g, 'href="../$1"');
 
@@ -127,7 +127,7 @@ class PageGenerator {
         subject.learningObjectives.forEach(objective => {
             html += `
             <tr>
-               <td><img class="icon" src="../../icons/tick.png" alt=""></td>
+               <td><img class="icon" src="../icons/tick.png" alt=""></td>
                <td>${objective}</td>
             </tr>`;
         });
