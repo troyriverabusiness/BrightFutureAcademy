@@ -1,39 +1,38 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/Pages/index.html"
+      "source": "/",
+      "destination": "/Pages/index.html"
     },
     {
-      "src": "/about",
-      "dest": "/Pages/AboutUsPage.html"
+      "source": "/about",
+      "destination": "/Pages/AboutUsPage.html"
     },
     {
-      "src": "/classes",
-      "dest": "/Pages/SubjectsPage.html"
+      "source": "/classes",
+      "destination": "/Pages/SubjectsPage.html"
     },
     {
-      "src": "/contact",
-      "dest": "/Pages/ContactPage.html"
+      "source": "/contact",
+      "destination": "/Pages/ContactPage.html"
     },
     {
-      "src": "/all-subjects",
-      "dest": "/Pages/GridViewSubjects.html"
+      "source": "/all-subjects",
+      "destination": "/Pages/GridViewSubjects.html"
     },
     {
-      "src": "/faqs",
-      "dest": "/Pages/FAQsPage.html"
+      "source": "/faqs",
+      "destination": "/Pages/FAQsPage.html"
     },
     {
-      "src": "/testimonials",
-      "dest": "/Pages/TestimonialsPage.html"
+      "source": "/testimonials",
+      "destination": "/Pages/TestimonialsPage.html"
     },
     {
-      "src": "/subjects/(.*)",
-      "dest": "/Pages/generated/$1"
+      "source": "/subjects/:path*",
+      "destination": "/Pages/generated/:path*"
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false,
-  "public": true
+  "trailingSlash": false
 }
