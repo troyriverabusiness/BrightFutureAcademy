@@ -51,7 +51,6 @@
       "dest": "/icons/$1"
     }
   ],
-  "functions": {},
   "cleanUrls": true,
   "trailingSlash": false
 }
