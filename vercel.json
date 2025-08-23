@@ -33,46 +33,25 @@
       "destination": "/Pages/generated/:path*"
     }
   ],
-  "headers": [
+  "routes": [
     {
-      "source": "/css/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/css"
-        }
-      ]
+      "src": "/css/(.*)",
+      "dest": "/css/$1"
     },
     {
-      "source": "/js/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
+      "src": "/js/(.*)",
+      "dest": "/js/$1"
     },
     {
-      "source": "/images/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/*"
-        }
-      ]
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
     },
     {
-      "source": "/icons/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/*"
-        }
-      ]
+      "src": "/icons/(.*)",
+      "dest": "/icons/$1"
     }
   ],
+  "functions": {},
   "cleanUrls": true,
-  "trailingSlash": false,
-  "public": true,
-  "outputDirectory": "."
+  "trailingSlash": false
 }
