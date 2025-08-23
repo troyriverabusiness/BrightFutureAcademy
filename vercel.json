@@ -74,6 +74,5 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "public": true,
-  "functions": {},
   "outputDirectory": "."
 }
