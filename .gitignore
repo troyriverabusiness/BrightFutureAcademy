@@ -4,11 +4,8 @@
 node_modules
 dist
 .cache
-images/
-icons/
 .editorconfig
 .DS_Store
-icons/
-images/
 
-generated/
+
+
