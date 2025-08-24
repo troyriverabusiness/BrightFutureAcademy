@@ -9,8 +9,8 @@ const path = require('path');
 
 class PageGenerator {
     constructor() {
-        this.templatePath = '../Pages/subject-template.html';
-        this.outputDir = '../Pages/generated/';
+        this.templatePath = '../subject-template.html';
+        this.outputDir = '../generated/';
         this.dataPath = './data/available_subjects.json';
     }
 
@@ -100,13 +100,7 @@ class PageGenerator {
             html = html.replace(new RegExp(placeholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), value);
         });
 
-        // Fix paths due to the generated pages being in different directory
-        html = html.replace(/href="\.\.\//g, 'href="../../');
-        html = html.replace(/src="\.\.\//g, 'src="../../');
-        // Fix the tick icon paths specifically to be correct
-        html = html.replace(/src="\.\.\.\.\.\.\/icons\/tick\.png"/g, 'src="../../icons/tick.png"');
-        // Navigation links need to go up 1 level to Pages directory
-        html = html.replace(/href="([^"]*\.html)"/g, 'href="../$1"');
+
 
         return html;
     }
@@ -127,7 +121,7 @@ class PageGenerator {
         subject.learningObjectives.forEach(objective => {
             html += `
             <tr>
-               <td><img class="icon" src="../icons/tick.png" alt=""></td>
+               <td><img class="icon" src="/icons/tick.png" alt=""></td>
                <td>${objective}</td>
             </tr>`;
         });

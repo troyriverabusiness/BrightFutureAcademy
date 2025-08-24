@@ -1,38 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/Pages/index.html"
-    },
-    {
-      "source": "/about",
-      "destination": "/Pages/AboutUsPage.html"
-    },
-    {
-      "source": "/classes",
-      "destination": "/Pages/SubjectsPage.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/Pages/ContactPage.html"
-    },
-    {
-      "source": "/all-subjects",
-      "destination": "/Pages/GridViewSubjects.html"
-    },
-    {
-      "source": "/faqs",
-      "destination": "/Pages/FAQsPage.html"
-    },
-    {
-      "source": "/testimonials",
-      "destination": "/Pages/TestimonialsPage.html"
-    },
-    {
-      "source": "/subjects/:path*",
-      "destination": "/Pages/generated/:path*"
-    }
-  ],
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false
 }
