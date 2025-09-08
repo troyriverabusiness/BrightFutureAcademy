@@ -651,6 +651,132 @@
    }
 }
 
+/* Responsive design for pricing section */
+@media (max-width: 1024px) {
+   .grid-container {
+      padding: 5% 5%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 180px);
+      gap: 20px;
+   }
+   
+   .digit {
+      font-size: 50px;
+   }
+   
+   .prices h4 {
+      font-size: 24px;
+   }
+   
+   .texti h4 {
+      font-size: 16px;
+   }
+   
+   #bento-button {
+      font-size: 1.2rem;
+   }
+   
+   .monthly {
+      font-size: 14px;
+   }
+   
+   .texti p {
+      font-size: 12px;
+   }
+   
+   .texti .bold {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 768px) {
+   .grid-container {
+      padding: 3% 3%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 160px);
+      gap: 15px;
+   }
+   
+   .digit {
+      font-size: 40px;
+   }
+   
+   .prices h4 {
+      font-size: 20px;
+   }
+   
+   .texti h4 {
+      font-size: 14px;
+   }
+   
+   #bento-button {
+      font-size: 1.1rem;
+   }
+   
+   .monthly {
+      font-size: 12px;
+   }
+   
+   .texti p {
+      font-size: 11px;
+   }
+   
+   .texti .bold {
+      font-size: 14px;
+   }
+   
+   .bento-item {
+      padding: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .grid-container {
+      padding: 2% 2%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 140px);
+      gap: 12px;
+   }
+   
+   .digit {
+      font-size: 30px;
+   }
+   
+   .prices h4 {
+      font-size: 18px;
+   }
+   
+   .texti h4 {
+      font-size: 12px;
+   }
+   
+   #bento-button {
+      font-size: 1rem;
+   }
+   
+   .monthly {
+      font-size: 10px;
+   }
+   
+   .texti p {
+      font-size: 10px;
+   }
+   
+   .texti .bold {
+      font-size: 12px;
+   }
+   
+   .bento-item {
+      padding: 12px;
+   }
+   
+   .wide {
+      grid-column: 1;
+      flex-direction: column;
+      gap: 15px;
+   }
+}
+
 
 
 /*  TEAM SECTION STYLING */
@@ -738,15 +864,22 @@
    font-size: 20px;
 }
 .prices h4 {
-   font-size: 36px;
+   font-size: 32px;
    font-weight: 600;
+}
+
+/* Ensure all h4 elements in pricing section are visible */
+.grid-container h4 {
+   font-size: 2em;
+   font-weight: 400;
+   color: var(--text);
 }
 .digit {
    --gradiet_num: linear-gradient(0, #DEF9F6, #266C6C) ;
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 80px;
+   font-size: 70px;
    font-weight: 600;
    background: var(--gradiet_num);
    background-clip: text;
