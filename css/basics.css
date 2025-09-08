@@ -141,7 +141,6 @@
    border: 2px solid var(--button);
    border-radius: 0 20px 0 20px;
    background: var(--button-hover);
-   text-color: white;
 }
 .primary-button:hover {
    background: var(--button);
@@ -389,6 +388,12 @@
    margin: 0;
 }
 
+@media (max-width: 768px) {
+   .interlude-container {
+      flex-direction: column;
+   }
+}
+
 
 
 /* E-COMMERCE SECTION STYLING */
@@ -415,10 +420,10 @@
 }
 .subjects-container {
    padding: 0 50px 50px 50px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   gap: 2%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 20px;
+   justify-items: center;
 }
 .product-link {
    background: white;
@@ -475,6 +480,177 @@
    text-decoration: underline;
 }
 
+/* Responsive design for subjects-preview section */
+@media (max-width: 1024px) {
+   .subjects-container {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+   }
+   
+   .product-link {
+      width: 100%;
+      max-width: 300px;
+   }
+}
+
+@media (max-width: 768px) {
+   .subjects-preview {
+      padding: 0 2%;
+   }
+   
+   .floatbg {
+      margin: 40px 2%;
+      border-radius: 15px;
+   }
+   
+   .title {
+      padding: 30px 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+   }
+   
+   .title .left h3 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+   }
+   
+   .title .left p {
+      font-size: 0.9em;
+   }
+   
+   .subjects-container {
+      padding: 0 20px 30px 20px;
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+   
+   .product-link {
+      width: 100%;
+      max-width: 350px;
+   }
+   
+   .product-image {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+   }
+}
+
+@media (max-width: 480px) {
+   .floatbg {
+      margin: 20px 1%;
+      border-radius: 10px;
+   }
+   
+   .title {
+      padding: 20px 15px;
+   }
+   
+   .title .left h3 {
+      font-size: 1.8em;
+   }
+   
+   .title .left p {
+      font-size: 0.85em;
+   }
+   
+   .subjects-container {
+      padding: 0 15px 20px 15px;
+      grid-template-columns: 1fr;
+      gap: 15px;
+   }
+   
+   .product-link {
+      padding: 15px;
+   }
+   
+   .product-image {
+      height: 140px;
+   }
+   
+   .product-title {
+      font-size: 1.1rem;
+   }
+   
+   .badge {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+   }
+}
+
+/* Responsive design for team section */
+@media (max-width: 1024px) {
+   .header-text-button-container {
+      margin: 60px 5% 20px 5%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+   }
+   
+   .team-container {
+      margin: 40px 5%;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+   }
+}
+
+@media (max-width: 768px) {
+   .header-text-button-container {
+      margin: 40px 3% 20px 3%;
+      text-align: center;
+   }
+   
+   .header-text-button-container h3 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+   }
+   
+   .team-container {
+      margin: 30px 3%;
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+   
+   .team-member {
+      max-width: 350px;
+      padding: 18px;
+   }
+   
+   .profile-pic {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      margin-bottom: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .header-text-button-container {
+      margin: 30px 2% 15px 2%;
+   }
+   
+   .header-text-button-container h3 {
+      font-size: 1.8em;
+   }
+   
+   .team-container {
+      margin: 20px 2%;
+      gap: 15px;
+   }
+   
+   .team-member {
+      padding: 15px;
+   }
+   
+   .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      margin-bottom: 12px;
+   }
+}
+
 
 
 /*  TEAM SECTION STYLING */
@@ -493,15 +669,18 @@
 }
 .team-container {
    margin: 50px 100px;
-   display: block;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 30px;
+   justify-items: center;
 }
 .team-member {
    background: var(--background_alt);
+   width: 100%;
    max-width: 300px;
    border-radius: 15px;
-   grid-row: 1;
    padding: 20px;
-   margin-right: 50px;
+   margin: 0;
 }
 .profile-pic {
    width: 80px;
